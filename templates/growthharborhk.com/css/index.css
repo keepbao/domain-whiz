@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'one';
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: 'one';
+    src: url("../fonts/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2");
+  }
+  
+  @font-face {
+    font-family: 'two';
+    src: url("../fonts/1cXxaUPXBpj2rGoU7C9WiHGF.woff2");
+  }
+  @font-face {
+    font-family: 'three';
+    src: url("../fonts/Yq6R-LCAWCX3-6Ky7FAFrOF6kjouQb4.woff2");
+  }
+  
+.banner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.menu{
+    height: 70px;
+    line-height: 70px;
+    width: 100%;
+    background-color: #fff;
+    overflow-y: hidden;
+}
+.menu img {
+    height: 70px;
+}
+.t1{
+    width: 820px;
+}
+.t1>h1{
+    margin-bottom: 20px;
+    /* font-family: superior-title,sans-serif; */
+    font-size: 51px;
+    font-weight: 500;
+    line-height: 61.6px;
+    font-family: 'three';
+    color: #000;
+    padding-top: 60px;
+}
+.t1>p{
+    font-size: 18px;
+    line-height: 28px;
+    color:rgb(94, 93, 93) ;
+    font-family: 'one';
+    margin-bottom: 30px;
+}
+.t1>h6{
+    font-size: 16px;
+    color:rgb(94, 93, 93) ;
+    font-family: 'one';
+    text-decoration: underline;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.gi{
+    display: grid;
+    grid-row:1/3;
+    width: 1200px;
+    height: auto;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.gi>.gi_img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.gi>.gi_img>img{
+    width: 70%;
+}
+.grayse{
+    background-color: #e9e9e9;
+}
+.grayse>h1{
+    color: #101027;
+    font-size: 50px;
+    line-height: 52px;
+    font-family: 'three';
+    padding: 60px 0;
+}
+.gr_gi{
+    display: grid;
+    grid-row:1/2;
+    grid-template-columns:1fr 1fr;
+    width: 1440px;
+    grid-column-gap:30px;
+    grid-row-gap:30px;
+}
+.grgi_it{
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 40px;
+    border-top: 1px solid #424242;
+}
+.grgi_it>h1{
+    font-size: 40px;
+    line-height: 52px;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    text-align: left;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    margin-bottom: 30px;
+}
+.grgi_it>h1:hover{
+    transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    -o-transform: skewX(-10deg);
+}
+.grgi_it>h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 26px;
+}
+
+.gir_gis{
+    display: grid;
+    grid-row:1/2;
+    grid-template-columns:1fr 1fr;
+    width: 100%;
+    grid-row-gap:14px;
+    margin-top: 30px;
+}
+.gir_itemsgis{
+    text-align: left;
+    font-size: 14px;
+    width: 100%;
+    color: #918f8f;
+}
+.red_v{
+    width: 1425px;
+    height: 650px;
+    overflow: hidden;
+    margin-top: 60px;
+}
+.strew{
+    font-size: 40px;
+    font-weight: 400;
+    width: 1425px;
+    line-height: 50px;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    text-align: left;
+    margin-top: 14px;
+    margin-bottom: 30px;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+}
+.strew:hover{
+    transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    -o-transform: skewX(-10deg);
+}
+.four_gi{
+    display: grid;
+    grid-row: 1/2;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap:40px;
+    grid-column-gap:40px;
+    width: 1425px;
+}
+.four_gi_item{
+    width: 100%;
+    height: auto;
+}
+.gi_video{
+    width: 100%;
+    height: 405px;
+    overflow: hidden;
+}
+.videotitle{
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+    padding: 20px 0;
+}
+.t_r{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 0;
+}
+.t_r_i{
+    width: auto;
+    margin:0 100px;
+}
+.t_r_itt{
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 105px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.t_r_icon{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    
+}
+.imgs_flex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    align-items: center;
+    padding-bottom: 50px;
+
+}
+.giI_img{
+    width: 97.5px;
+    margin:0 20px;
+    
+}
+.giI_img>img{
+    width: 100%;
+}
+
+.lines_one{
+    width: 800px;
+    height: 1px;
+
+    background-color: #bbb9b9;
+    margin-bottom: 30px;
+}

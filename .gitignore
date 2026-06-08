@@ -1,0 +1,24 @@
+node_modules/
+dist/
+out/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+.artifacts/
+.work/
+.deploy-logs/
+.approval-tracker.json
+
+# electron-builder 安装包（按版本号落在 apps/desktop/release/<version>/）
+apps/desktop/release/
+
+# SSH 私钥（任何后缀的私钥都不应提交）
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# 真实部署列表，按 example 复制后本地编辑
+scripts/deploy.list.txt

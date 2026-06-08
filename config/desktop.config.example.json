@@ -1,0 +1,126 @@
+{
+  "cursorApiKey": "",
+  "deployServers": [
+    {
+      "host": "10.102.4.210",
+      "port": 22,
+      "username": "root",
+      "privateKeyPath": "",
+      "privateKeyPem": "",
+      "privateKeyPassphrase": ""
+    }
+  ],
+  "feishu": {
+    "appId": "",
+    "appSecret": "",
+    "baseUrl": "https://open.feishu.cn",
+    "pollIntervalMs": 60000,
+    "approvals": {
+      "domainPurchase": {
+        "approvalCode": "",
+        "applicantOpenId": "",
+        "fieldMap": {
+          "applicationType": {
+            "id": "widget17419222507010001",
+            "type": "radioV2",
+            "options": {
+              "域名购买": "m887j6q6-m69ir6kbha-0",
+              "域名解析": "m887j6q6-592kbg0i27a-0"
+            }
+          },
+          "domainOwner": { "id": "widget17419221592220001", "type": "contact" },
+          "domainList": {
+            "id": "widget17419221901240001",
+            "type": "fieldList",
+            "children": {
+              "name": { "id": "widget17419221986740001", "type": "input" },
+              "years": {
+                "id": "widget17482383475270001",
+                "type": "radioV2",
+                "options": {
+                  "1年": "mb4nz288-jv9x9di7n0h-0",
+                  "2年": "mb4nz288-2srmd9d8qbu-0",
+                  "3年": "mb4nz288-xgdbyaa7qam-0",
+                  "5年": "mb4nz559-jx1k4uknqb-1"
+                }
+              }
+            }
+          },
+          "providedInChinaMainland": {
+            "id": "widget17520468105280001",
+            "type": "radioV2",
+            "options": { "是": "mcvnfn35-om6owmwsvw-0", "否": "mcvnfn35-25ixicewnwl-0" }
+          },
+          "icpFiled": {
+            "id": "widget17419227494310001",
+            "type": "radioV2",
+            "options": {
+              "否": "m887tvjs-c9zptbxvsio-0",
+              "是": "m887tvjs-bxuyqdk82db-0"
+            }
+          },
+          "reason": { "id": "widget17446108389270001", "type": "textarea" }
+        }
+      },
+      "domainResolve": {
+        "approvalCode": "",
+        "applicantOpenId": "",
+        "fieldMap": {
+          "applicationType": {
+            "id": "widget17419222507010001",
+            "type": "radioV2",
+            "options": {
+              "域名购买": "m887j6q6-m69ir6kbha-0",
+              "域名解析": "m887j6q6-592kbg0i27a-0"
+            }
+          },
+          "domainResolveList": {
+            "id": "widget17419308246210001",
+            "type": "fieldList",
+            "children": {
+              "operationType": {
+                "id": "widget17490200882250001",
+                "type": "radioV2",
+                "options": {
+                  "新增": "mbhleh7m-aszxjxdaajr-0",
+                  "修改": "mbhleh7m-2fwl2fj82ar-0",
+                  "删除": "mbhleh7m-rgmhmhsskxn-0"
+                }
+              },
+              "prefix": { "id": "widget17419308433630001", "type": "input" },
+              "name": { "id": "widget17419308439480001", "type": "input" },
+              "recordType": {
+                "id": "widget17419331766690001",
+                "type": "radioV2",
+                "options": {
+                  "A": "m88e1d99-utpy0560mop-0",
+                  "CNAME": "m88e1d99-n0wya7gvbo-0",
+                  "MX": "m88e1d99-6gu1eo1u2o7-0",
+                  "TXT": "m88e1d9f-72sdj4i86qm-1"
+                }
+              },
+              "isAdvanced": {
+                "id": "widget17490186230870001",
+                "type": "radioV2",
+                "options": {
+                  "否": "mbhkj2pc-aan8lz1f62h-0",
+                  "是": "mbhkj2pc-7rw1ow6epss-0"
+                }
+              },
+              "value": { "id": "widget17419308447880001", "type": "input" }
+            }
+          },
+          "operationMode": {
+            "id": "widget17490209660920001",
+            "type": "radioV2",
+            "options": {
+              "自动化操作": "mbhlxakt-4i00nv9aq1l-0",
+              "手动操作": "mbhlxakt-6m7eqok0o5u-0"
+            }
+          },
+          "reason": { "id": "widget17446108389270001", "type": "textarea" }
+        }
+      }
+    }
+  }
+}

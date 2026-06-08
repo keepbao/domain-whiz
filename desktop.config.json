@@ -1,0 +1,124 @@
+{
+  "cursorApiKey": "crsr_160952ae9986279161d6a8bdd692217ba11a4fc53306a265a514416df11a6acf",
+  "deployServers": [
+    {
+      "host": "10.102.4.210",
+      "port": 22,
+      "username": "root",
+      "privateKeyPath": "",
+      "privateKeyPassphrase": "",
+      "privateKeyPem": "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEAxSgB2clhcrhixDpwCbY/3Rqdld+pVok6N2cFGld/eKGajuiQ\nhIpT6QkBknYOvCw9Q3sbRPQ7r6XaPnzbkDs5MhBJUq0A/kNpdDvV5JrwWFwFo0kP\nyzCc83PP9sATHi65S/pR0Ruy4KTigEsOCiAnnbn4Wka+yQrbr4xBeDVmU6LDp1Ki\nxZt9CJccO9dmBNPVFHBNjtnrhn2/dDyyve5rbSYJ+gnjXiCMl5Aae/sas60La7rK\ne5PeKfaH8Ji/momkpJvIdpu/ZkcR6yG8n11lTCYZX45jqv2QK4aGLZwk2v7zseR9\n+vVca8ulfEMYd9wmxZaIRTGnu27qIMdRve8ArQIDAQABAoIBAQDBVGbkMjZtsWOg\nepFs5JshbL0Ev4slQXGl7E6zswNbvlR6OJGmdqKrzFoPTddLLLJynqBx8HEq357w\nUa1YdMq0TgYonV9w9ZfOE/K9tjVi3/HjWXy0ShpOHM3ccCMPINAxMejS/a9d3DID\njhXZVgijAT8I/4CMUip0rTtx7iNGdIZdoS/cSw0aF7jenHjLvwkfC+f/bTqmdCmW\nPDWN/GGxxKMSCjY01Lbx4SpwMMf7I2vcPu8ZiSNoVYiX4fATV5KBcah4kBaB18Nt\nepki9HhYHhOzCxqLv/tzAWKKzEzf8RRO6a2aSJ4JR0T3MhE99TXw6hnIZKwJxSu2\nOGx+DGHdAoGBAPFSRJ9CYRK0ujrfkFQyiw3DLqACpxgfoU2FwVlSnN+vKJx0Hrgk\npHqsk4Xc5j8Kd0kMomCNcPQ5SLB+R6IgyF4Dl5NiCW8HrCrhjTlfm0y1ByJOClKV\nUUfAxiZiv+mi4+8QXHuANgCABuwL5Hf79/7F9YgwINYKUzTZKmG0BUeHAoGBANEm\nBfUFzs+x/mbTlQ6cHwk0StkHwANL+B5IyemvYYdqW+Ghs9Q5gDrLVlXscLaI90Uf\nl1S1TYF1eTQuT/O+R9joP7OLONYOaHdb3wyynb3LwNsDGbFdls6X7db5ZW66mfSa\n+XhGoF251YB+LSRcnnD50yRUiX1fBvrizk90KVsrAoGAQ1NcacIvKvTY8AvnTFY9\njT1jCKk0zPomGmaypqTxt0Y64ktTNrSiXsc+8R3L7tKQrQSlWKKdXMWOjg7tFUJo\nJDKEW04Cq8NMOTpsGBGgVio7L0ruflPCNW6G2ba7LAeR5+R8qMgASOtvAvPebcsS\nSTYZZkFnJ9ABnsDnnhKHVokCgYBVyrYY2ygJdGb5wQLculfUy7mEKzStZYVCzvLc\nQ8/K32sPM+hzPp8F/xDMMC/QAIEFvr6xxakkWI6+Q90SC9Sm+iXfPVW0ILbjdzEY\noVApYaIbdLseUViiKBos26Kq+Cpc9xEsMDRqHeehTKCx0LhBeYkN1wuK/Ob9FPoy\nB2FLfwKBgCTfMtepXAwnBisa+zTWYBLpzcrDMKdhdayi0RnVqKgwS+GPHzyJJbou\nKVviYEDHu/SC2YliKcZ9Sv4Q+0S2QQfBKejiDcS227TsOJs310/tZrF722t2QUeV\ntyFoomWwv2jJkk/RSQb060jDzvr4I1T/gb47dsPMwx8JH+HL13dU\n-----END RSA PRIVATE KEY-----"
+    }
+  ],
+  "feishu": {
+    "appId": "cli_a8abd91d42fc1013",
+    "appSecret": "OtOJCpGmij7kjyM0VezDmdS8UhlYCTtK",
+    "approvals": {
+      "domainPurchase": {
+        "approvalCode": "35B81E6B-DFBB-4585-BD22-C128BD25E183",
+        "applicantOpenId": "7481501675920850946",
+        "fieldMap": {
+          "applicationType": {
+            "id": "widget17419222507010001",
+            "type": "radioV2",
+            "options": {
+              "域名购买": "m887j6q6-m69ir6kbha-0",
+              "域名解析": "m887j6q6-592kbg0i27a-0"
+            }
+          },
+          "domainOwner": { "id": "widget17419221592220001", "type": "contact" },
+          "domainList": {
+            "id": "widget17419221901240001",
+            "type": "fieldList",
+            "children": {
+              "name": { "id": "widget17419221986740001", "type": "input" },
+              "years": {
+                "id": "widget17482383475270001",
+                "type": "radioV2",
+                "options": {
+                  "1年": "mb4nz288-jv9x9di7n0h-0",
+                  "2年": "mb4nz288-2srmd9d8qbu-0",
+                  "3年": "mb4nz288-xgdbyaa7qam-0",
+                  "5年": "mb4nz559-jx1k4uknqb-1"
+                }
+              }
+            }
+          },
+          "providedInChinaMainland": {
+            "id": "widget17520468105280001",
+            "type": "radioV2",
+            "options": { "是": "mcvnfn35-om6owmwsvw-0", "否": "mcvnfn35-25ixicewnwl-0" }
+          },
+          "icpFiled": {
+            "id": "widget17419227494310001",
+            "type": "radioV2",
+            "options": {
+              "否": "m887tvjs-c9zptbxvsio-0",
+              "是": "m887tvjs-bxuyqdk82db-0"
+            }
+          },
+          "reason": { "id": "widget17446108389270001", "type": "textarea" }
+        }
+      },
+      "domainResolve": {
+        "approvalCode": "35B81E6B-DFBB-4585-BD22-C128BD25E183",
+        "applicantOpenId": "7481501675920850946",
+        "fieldMap": {
+          "applicationType": {
+            "id": "widget17419222507010001",
+            "type": "radioV2",
+            "options": {
+              "域名购买": "m887j6q6-m69ir6kbha-0",
+              "域名解析": "m887j6q6-592kbg0i27a-0"
+            }
+          },
+          "domainResolveList": {
+            "id": "widget17419308246210001",
+            "type": "fieldList",
+            "children": {
+              "operationType": {
+                "id": "widget17490200882250001",
+                "type": "radioV2",
+                "options": {
+                  "新增": "mbhleh7m-aszxjxdaajr-0",
+                  "修改": "mbhleh7m-2fwl2fj82ar-0",
+                  "删除": "mbhleh7m-rgmhmhsskxn-0"
+                }
+              },
+              "prefix": { "id": "widget17419308433630001", "type": "input" },
+              "name": { "id": "widget17419308439480001", "type": "input" },
+              "recordType": {
+                "id": "widget17419331766690001",
+                "type": "radioV2",
+                "options": {
+                  "A": "m88e1d99-utpy0560mop-0",
+                  "CNAME": "m88e1d99-n0wya7gvbo-0",
+                  "MX": "m88e1d99-6gu1eo1u2o7-0",
+                  "TXT": "m88e1d9f-72sdj4i86qm-1"
+                }
+              },
+              "isAdvanced": {
+                "id": "widget17490186230870001",
+                "type": "radioV2",
+                "options": {
+                  "否": "mbhkj2pc-aan8lz1f62h-0",
+                  "是": "mbhkj2pc-7rw1ow6epss-0"
+                }
+              },
+              "value": { "id": "widget17419308447880001", "type": "input" }
+            }
+          },
+          "operationMode": {
+            "id": "widget17490209660920001",
+            "type": "radioV2",
+            "options": {
+              "自动化操作": "mbhlxakt-4i00nv9aq1l-0",
+              "手动操作": "mbhlxakt-6m7eqok0o5u-0"
+            }
+          },
+          "reason": { "id": "widget17446108389270001", "type": "textarea" }
+        }
+      }
+    }
+  }
+}

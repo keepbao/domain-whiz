@@ -1,0 +1,2358 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Click-vista: Leading Global Ad Tech Platform</title>
+
+    <meta name="description"
+        content="Click-vista is a Leading Global Ad Tech Platform, with a vast network of over 1 billion connected devices, dedicated to optimizing customer acquisition & engagement.">
+
+
+
+    <meta property="og:title" content="Click-vista: Leading Global Ad Tech Platform">
+    <meta property="og:site_name" content="Click-vista">
+    <meta property="og:url" content="https://www.click-vista.com/">
+    <meta property="og:description" content="Click-vista is a Leading Global Ad Tech Platform, with a vast network of over 1 billion connected devices, dedicated to optimizing customer acquisition & engagement.
+">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://www.click-vista.com/" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@icubes_wire" />
+    <meta name="twitter:title" content="Click-vista: Leading Global Ad Tech Platform" />
+    <meta name="twitter:description" content="Click-vista is a Leading Global Ad Tech Platform, with a vast network of over 1 billion connected devices, dedicated to optimizing customer acquisition & engagement.
+" />
+
+
+
+
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-34583619-1"></script>
+    <script
+        defer>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-34583619-1');</script>
+
+
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="icon" href="./img/200-50.png" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    body {
+        overflow-y: scroll !important
+    }
+
+    .holderCircle {
+        width: 500px;
+        height: 500px;
+        border-radius: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .dotCircle {
+        width: 105%;
+        height: 100%;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 100%;
+        z-index: 20
+    }
+
+    .dotCircle .itemDot {
+        display: block;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        background: #fff;
+        color: #f55b33;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 80px;
+        font-size: 30px;
+        z-index: 3;
+        cursor: pointer;
+        border: 2px solid #e6e6e6;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .dotCircle .itemDot .forActive {
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: none
+    }
+
+    .dotCircle .itemDot .forActive::after {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border: 3px solid #f55b33;
+        bottom: -31px;
+        left: -14px;
+        filter: blur(1px);
+        position: absolute;
+        border-radius: 100%
+    }
+
+    .dotCircle .itemDot .forActive::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        filter: blur(5px);
+        top: -15px;
+        position: absolute;
+        transform: rotate(-45deg);
+        border: 6px solid #f55b33;
+        right: -39px
+    }
+
+    .dotCircle .itemDot.active .forActive {
+        display: block
+    }
+
+    .round {
+        position: absolute;
+        left: 48px;
+        top: 50px;
+        width: 400px;
+        height: 400px;
+        border: 2px dotted #f55b33;
+        border-radius: 100%;
+        -webkit-animation: rotation 100s infinite linear
+    }
+
+    .round::after {
+        content: '';
+        position: absolute;
+        left: -27px;
+        top: -27px;
+        width: 450px;
+        height: 450px;
+        border: 2px dotted #f55b33;
+        border-radius: 100%;
+        -webkit-animation: rotation 100s infinite linear
+    }
+
+    .dotCircle .itemDot:hover,
+    .dotCircle .itemDot.active {
+        color: #fff;
+        transition: .5s;
+        background: #f55b33;
+        background: -moz-linear-gradient(left, #f55b33 0%, #3531a8 100%);
+        background: -webkit-linear-gradient(left, #f55b33 0%, #3531a8 100%);
+        background: linear-gradient(to right, #f55b33 0%, #3531a8 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d4ac7', endColorstr='#a733bb', GradientType=1);
+        border: 2px solid #fff;
+        -webkit-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .13);
+        -moz-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .13);
+        box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .13)
+    }
+
+    .dotCircle .itemDot {
+        font-size: 40px
+    }
+
+    .contentCircle {
+        width: 380px;
+        height: 380px;
+        border-radius: 100%;
+        color: #222;
+        position: relative
+    }
+
+    .contentCircle .CirItem {
+        border-radius: 100%;
+        color: #222;
+        position: absolute;
+        text-align: center;
+        bottom: 165px;
+        left: 0;
+        opacity: 0;
+        transform: scale(0);
+        transition: .5s;
+        font-size: 15px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        margin: auto;
+        line-height: 250px
+    }
+
+    .contentCircle .CirItem img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: #f55b33;
+        object-fit: cover
+    }
+
+    .CirItem.active {
+        z-index: 1;
+        opacity: 1;
+        transform: scale(1);
+        transition: .5s
+    }
+
+    .contentCircle .CirItem i {
+        font-size: 180px;
+        position: absolute;
+        top: -40px;
+        left: 56%;
+        margin-left: -90px;
+        color: #000;
+        opacity: .1
+    }
+
+    @media only screen and (min-width:300px) and (max-width:599px) {
+        .holderCircle {
+            width: 300px;
+            height: 300px;
+            margin: 110px auto
+        }
+
+        .holderCircle::after {
+            width: 100%;
+            height: 100%
+        }
+
+        .dotCircle {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto
+        }
+    }
+
+    .title-box .title {
+        font-weight: 700;
+        letter-spacing: 1px;
+        position: relative;
+        z-index: 999999999;
+        bottom: -212px;
+        font-family: 'Lato';
+        margin-bottom: 0;
+        text-transform: uppercase
+    }
+
+    .title-box span {
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 10px;
+        font-family: 'Lato'
+    }
+
+    .title-box p {
+        font-size: 17px;
+        line-height: 1em;
+        font-family: 'Lato';
+        margin-bottom: 0;
+        margin-top: 5px;
+        color: #fff
+    }
+
+    .section-eight .swiper-wrapper .swiper-slide .gallery_img {
+        justify-content: center
+    }
+
+    .section-eight .gallery_img img {
+        width: 60% !important
+    }
+
+    .setion-five .container {
+        gap: 135px
+    }
+
+    .itemDot1 {
+        left: 420px !important
+    }
+
+    .itemDot3 {
+        left: 10px !important
+    }
+
+    @media (max-width:991px) {
+        .featured-section {
+            padding-bottom: 0
+        }
+    }
+
+    .slider-section-one .swiper-slide img {
+        margin: auto;
+        width: 80%
+    }
+
+    .three-section-left ul {
+        display: block
+    }
+
+    .image-container {
+        width: 100%;
+        position: sticky;
+        top: 80px
+    }
+
+    .sticky-image {
+        width: 100%;
+        height: auto
+    }
+
+    .testim {
+        width: 100%;
+        margin: 300px 0 0 0;
+        -webkit-transform: translatey(-50%);
+        -moz-transform: translatey(-50%);
+        -ms-transform: translatey(-50%);
+        -o-transform: translatey(-50%);
+        transform: translatey(-50%)
+    }
+
+    .testim .wrap {
+        position: relative;
+        width: 100%;
+        max-width: 1020px;
+        padding: 40px 20px;
+        margin: auto
+    }
+
+    .testim .arrow {
+        display: block;
+        position: absolute;
+        color: #7a7a7a;
+        cursor: pointer;
+        font-size: 2em;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        padding: 5px;
+        z-index: 22222222
+    }
+
+    .testim .arrow:before {
+        cursor: pointer
+    }
+
+    .testim .arrow:hover {
+        color: #3c83fb
+    }
+
+    .testim .arrow.left {
+        left: 10px
+    }
+
+    .testim .arrow.right {
+        right: 10px
+    }
+
+    .testim .dots {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        bottom: 60px;
+        left: 0;
+        display: block;
+        z-index: 3333;
+        height: 12px
+    }
+
+    .testim .dots .dot {
+        list-style-type: none;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        margin: 0 10px;
+        cursor: pointer;
+        -webkit-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        position: relative
+    }
+
+    .testim .dots .dot.active,
+    .testim .dots .dot:hover {
+        background: #3c83fb;
+        border-color: #3c83fb
+    }
+
+    .testim .cont {
+        position: relative;
+        overflow: hidden
+    }
+
+    .testim .cont>div {
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 0 10px 0;
+        opacity: 0
+    }
+
+    .testim .cont>div.inactive {
+        opacity: 1
+    }
+
+    .testim .cont>div.active {
+        position: relative;
+        opacity: 1
+    }
+
+    .testim .cont div .img img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        border-radius: 50%
+    }
+
+    .testim .cont div h2 {
+        color: #3c83fb;
+        font-family: 'Lato';
+        font-size: 1.35em;
+        margin: 15px 0 0 0
+    }
+
+    .testim .cont div p {
+        font-size: 1.15em;
+        font-family: 'Lato';
+        color: #000;
+        width: 80%;
+        margin: auto
+    }
+
+    .testim .cont div.active .img img {
+        -webkit-animation: testim-show .5s ease-in-out forwards;
+        -moz-animation: testim-show .5s ease-in-out forwards;
+        -ms-animation: testim-show .5s ease-in-out forwards;
+        -o-animation: testim-show .5s ease-in-out forwards;
+        animation: testim-show .5s ease-in-out forwards
+    }
+
+    .testim .cont div.active h2 {
+        -webkit-animation: testim-content-in .4s ease-in-out forwards;
+        -moz-animation: testim-content-in .4s ease-in-out forwards;
+        -ms-animation: testim-content-in .4s ease-in-out forwards;
+        -o-animation: testim-content-in .4s ease-in-out forwards;
+        animation: testim-content-in .4s ease-in-out forwards
+    }
+
+    .testim .cont div.active p {
+        -webkit-animation: testim-content-in .5s ease-in-out forwards;
+        -moz-animation: testim-content-in .5s ease-in-out forwards;
+        -ms-animation: testim-content-in .5s ease-in-out forwards;
+        -o-animation: testim-content-in .5s ease-in-out forwards;
+        animation: testim-content-in .5s ease-in-out forwards
+    }
+
+    .testim .cont div.inactive .img img {
+        -webkit-animation: testim-hide .5s ease-in-out forwards;
+        -moz-animation: testim-hide .5s ease-in-out forwards;
+        -ms-animation: testim-hide .5s ease-in-out forwards;
+        -o-animation: testim-hide .5s ease-in-out forwards;
+        animation: testim-hide .5s ease-in-out forwards
+    }
+
+    .testim .cont div.inactive h2 {
+        -webkit-animation: testim-content-out .4s ease-in-out forwards;
+        -moz-animation: testim-content-out .4s ease-in-out forwards;
+        -ms-animation: testim-content-out .4s ease-in-out forwards;
+        -o-animation: testim-content-out .4s ease-in-out forwards;
+        animation: testim-content-out .4s ease-in-out forwards
+    }
+
+    .testim .cont div.inactive p {
+        -webkit-animation: testim-content-out .5s ease-in-out forwards;
+        -moz-animation: testim-content-out .5s ease-in-out forwards;
+        -ms-animation: testim-content-out .5s ease-in-out forwards;
+        -o-animation: testim-content-out .5s ease-in-out forwards;
+        animation: testim-content-out .5s ease-in-out forwards
+    }
+
+    @-webkit-keyframes testim-scale {
+        0% {
+            -webkit-box-shadow: 0px 0px 0px 0px #eee;
+            box-shadow: 0px 0px 0px 0px #eee;
+        }
+
+        35% {
+            -webkit-box-shadow: 0px 0px 10px 5px #eee;
+            box-shadow: 0px 0px 10px 5px #eee;
+        }
+
+        70% {
+            -webkit-box-shadow: 0px 0px 10px 5px #ea830e;
+            box-shadow: 0px 0px 10px 5px #ea830e;
+        }
+
+        100% {
+            -webkit-box-shadow: 0px 0px 0px 0px #ea830e;
+            box-shadow: 0px 0px 0px 0px #ea830e;
+        }
+    }
+
+    @-moz-keyframes testim-scale {
+        0% {
+            -moz-box-shadow: 0px 0px 0px 0px #eee;
+            box-shadow: 0px 0px 0px 0px #eee;
+        }
+
+        35% {
+            -moz-box-shadow: 0px 0px 10px 5px #eee;
+            box-shadow: 0px 0px 10px 5px #eee;
+        }
+
+        70% {
+            -moz-box-shadow: 0px 0px 10px 5px #ea830e;
+            box-shadow: 0px 0px 10px 5px #ea830e;
+        }
+
+        100% {
+            -moz-box-shadow: 0px 0px 0px 0px #ea830e;
+            box-shadow: 0px 0px 0px 0px #ea830e;
+        }
+    }
+
+    @-ms-keyframes testim-scale {
+        0% {
+            -ms-box-shadow: 0px 0px 0px 0px #eee;
+            box-shadow: 0px 0px 0px 0px #eee;
+        }
+
+        35% {
+            -ms-box-shadow: 0px 0px 10px 5px #eee;
+            box-shadow: 0px 0px 10px 5px #eee;
+        }
+
+        70% {
+            -ms-box-shadow: 0px 0px 10px 5px #ea830e;
+            box-shadow: 0px 0px 10px 5px #ea830e;
+        }
+
+        100% {
+            -ms-box-shadow: 0px 0px 0px 0px #ea830e;
+            box-shadow: 0px 0px 0px 0px #ea830e;
+        }
+    }
+
+    @-o-keyframes testim-scale {
+        0% {
+            -o-box-shadow: 0px 0px 0px 0px #eee;
+            box-shadow: 0px 0px 0px 0px #eee;
+        }
+
+        35% {
+            -o-box-shadow: 0px 0px 10px 5px #eee;
+            box-shadow: 0px 0px 10px 5px #eee;
+        }
+
+        70% {
+            -o-box-shadow: 0px 0px 10px 5px #ea830e;
+            box-shadow: 0px 0px 10px 5px #ea830e;
+        }
+
+        100% {
+            -o-box-shadow: 0px 0px 0px 0px #ea830e;
+            box-shadow: 0px 0px 0px 0px #ea830e;
+        }
+    }
+
+    @keyframes testim-scale {
+        0% {
+            box-shadow: 0px 0px 0px 0px #eee;
+        }
+
+        35% {
+            box-shadow: 0px 0px 10px 5px #eee;
+        }
+
+        70% {
+            box-shadow: 0px 0px 10px 5px #ea830e;
+        }
+
+        100% {
+            box-shadow: 0px 0px 0px 0px #ea830e;
+        }
+    }
+
+    @-webkit-keyframes testim-content-in {
+        from {
+            opacity: 0;
+            -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+
+    @-moz-keyframes testim-content-in {
+        from {
+            opacity: 0;
+            -moz-transform: translateY(100%);
+            transform: translateY(100%);
+        }
+
+        to {
+            opacity: 1;
+            -moz-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+
+    @-ms-keyframes testim-content-in {
+        from {
+            opacity: 0;
+            -ms-transform: translateY(100%);
+            transform: translateY(100%);
+        }
+
+        to {
+            opacity: 1;
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+
+    @-o-keyframes testim-content-in {
+        from {
+            opacity: 0;
+            -o-transform: translateY(100%);
+            transform: translateY(100%);
+        }
+
+        to {
+            opacity: 1;
+            -o-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes testim-content-in {
+        from {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @-webkit-keyframes testim-content-out {
+        from {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        to {
+            opacity: 0;
+            -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+        }
+    }
+
+    @-moz-keyframes testim-content-out {
+        from {
+            opacity: 1;
+            -moz-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        to {
+            opacity: 0;
+            -moz-transform: translateY(-100%);
+            transform: translateY(-100%);
+        }
+    }
+
+    @-ms-keyframes testim-content-out {
+        from {
+            opacity: 1;
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        to {
+            opacity: 0;
+            -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+        }
+    }
+
+    @-o-keyframes testim-content-out {
+        from {
+            opacity: 1;
+            -o-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        to {
+            opacity: 0;
+            transform: translateY(-100%);
+            transform: translateY(-100%);
+        }
+    }
+
+    @keyframes testim-content-out {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        to {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+    }
+
+    @-webkit-keyframes testim-show {
+        from {
+            opacity: 0;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+
+    @-moz-keyframes testim-show {
+        from {
+            opacity: 0;
+            -moz-transform: scale(0);
+            transform: scale(0);
+        }
+
+        to {
+            opacity: 1;
+            -moz-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+
+    @-ms-keyframes testim-show {
+        from {
+            opacity: 0;
+            -ms-transform: scale(0);
+            transform: scale(0);
+        }
+
+        to {
+            opacity: 1;
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+
+    @-o-keyframes testim-show {
+        from {
+            opacity: 0;
+            -o-transform: scale(0);
+            transform: scale(0);
+        }
+
+        to {
+            opacity: 1;
+            -o-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+
+    @keyframes testim-show {
+        from {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    @-webkit-keyframes testim-hide {
+        from {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+
+        to {
+            opacity: 0;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+    }
+
+    @-moz-keyframes testim-hide {
+        from {
+            opacity: 1;
+            -moz-transform: scale(1);
+            transform: scale(1);
+        }
+
+        to {
+            opacity: 0;
+            -moz-transform: scale(0);
+            transform: scale(0);
+        }
+    }
+
+    @-ms-keyframes testim-hide {
+        from {
+            opacity: 1;
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+
+        to {
+            opacity: 0;
+            -ms-transform: scale(0);
+            transform: scale(0);
+        }
+    }
+
+    @-o-keyframes testim-hide {
+        from {
+            opacity: 1;
+            -o-transform: scale(1);
+            transform: scale(1);
+        }
+
+        to {
+            opacity: 0;
+            -o-transform: scale(0);
+            transform: scale(0);
+        }
+    }
+
+    @keyframes testim-hide {
+        from {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        to {
+            opacity: 0;
+            transform: scale(0);
+        }
+    }
+
+    @media all and (max-width:300px) {
+        body {
+            font-size: 14px
+        }
+    }
+
+    @media all and (max-width:500px) {
+        .testim .arrow {
+            font-size: 1.5em
+        }
+
+        .testim .cont div p {
+            line-height: 25px
+        }
+    }
+
+    .slider-section .slider-img {
+        width: calc((90% - 300) / 6)
+    }
+
+    @media (max-width:600px) {
+        .slider-section .slider-img {
+            width: calc((90% - 1px) / 2)
+        }
+    }
+
+    .featured-right-section img {
+        width: 82%
+    }
+
+    .wrapper {
+        position: fixed;
+        bottom: 50px;
+        right: -370px;
+        z-index: 999999;
+        max-width: 345px;
+        width: 100%;
+        background: #fff;
+        border-radius: 8px;
+        padding: 15px 25px 22px;
+        transition: right .3s ease;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1)
+    }
+
+    .wrapper.show {
+        right: 20px
+    }
+
+    .wrapper header {
+        display: flex;
+        align-items: center;
+        column-gap: 15px
+    }
+
+    header i {
+        color: #f55b33;
+        font-size: 32px
+    }
+
+    header h2 {
+        color: #f55b33;
+        font-weight: 500;
+        font-size: 1.5rem
+    }
+
+    .wrapper .data {
+        margin-top: 16px
+    }
+
+    .wrapper .data p {
+        color: #333;
+        font-size: 16px
+    }
+
+    .data p a {
+        color: #f55b33;
+        text-decoration: none
+    }
+
+    .data p a:hover {
+        text-decoration: underline
+    }
+
+    .wrapper .buttons {
+        margin-top: 16px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    .buttons .button {
+        border: none;
+        color: #fff;
+        padding: 8px 0;
+        border-radius: 4px;
+        background: #f55b33;
+        cursor: pointer;
+        width: calc(100% / 2 - 10px);
+        transition: all .2s ease
+    }
+
+
+</style>
+
+<body>
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://www.click-vista.com">
+                    <div class="logo">
+                        <img src="./img/200-50.png" alt="logo" style="height: 90px;width: auto;">
+                    </div> 
+                </a>
+            
+              
+            </div>
+        </nav>
+        <section class="banner-section">
+            <img class="shap" src="./img/shap.png" alt="shap">
+            <div class="main-banner main_banner_n padding_50px">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="banner-left">
+                                <h1>Leading Ad Tech Platform
+                                    with more than 1 Billion Connected Devices
+                                    enabling Customer Acquisition & Engagement</h1>
+                            </div>
+                            <h5>Be part of our growing family of 500+ Customers worldwide</h5>
+                            <ul>
+                                <li>
+                                    <img src="./img/booking.png" alt="adani" />
+                                </li>
+                                <li>
+                                    <img src="./img/adani.png" alt="indigo" />
+                                </li>
+                                <li>
+                                    <img src="./img/alshaya.png" alt="kotak" />
+                                </li>
+                                <li>
+                                    <img src="data:image/webp;base64,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"
+                                        alt="amazon" />
+                                </li>
+                                <li>
+                                    <img src="./img/mcd.png" alt="flipkart" />
+                                </li>
+                                <li>
+                                    <img src="./img/kotak.png" alt="shahid" />
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-5 d-none d-lg-block">
+                            <div class="round_section">
+
+                                <div class="holderCircle">
+                                    <div class="round"></div>
+                                    <div class="dotCircle">
+                                        <span class="itemDot active itemDot1" data-tab="1"
+                                            style="left: 420px">
+                                            <i class="fa fa-globe"></i>
+                                            <span class="forActive"></span>
+                                        </span>
+
+                                        <span class="itemDot itemDot2" data-tab="2">
+                                            <i class="fa fa-comments"></i>
+                                            <span class="forActive"></span>
+                                        </span>
+
+                                        <span class="itemDot itemDot3" data-tab="3">
+                                            <i class="fa fa-handshake-o"></i>
+                                            <span class="forActive"></span>
+                                        </span>
+
+                                        <span class="itemDot itemDot4" data-tab="4">
+                                            <i class="fa fa-floppy-o"></i>
+                                            <span class="forActive"></span>
+                                        </span>
+
+                                    </div>
+                                    <div class="contentCircle">
+                                        <div class="CirItem title-box active CirItem1">
+                                            <h2 class="title"><span>Discover</span>
+                                                <p>Know your <br> target audience</p>
+                                            </h2>
+                                            <!-- <i class="fa fa-globe"></i> -->
+                                            <img src="" />
+                                        </div>
+
+                                        <div class="CirItem title-box CirItem2">
+                                            <h2 class="title"><span>Engage </span>
+                                                <p>Reach your target <br> audience across channels</p>
+                                            </h2>
+                                            <!-- <i class="fa fa-comments"></i> -->
+                                            <img src="" />
+                                        </div>
+
+                                        <div class="CirItem title-box CirItem3">
+                                            <h2 class="title"><span>Acquire</span>
+                                                <p>Onboard the <br> intended customers</p>
+                                            </h2>
+                                            <!-- <i class="fa fa-handshake-o" style="left:100px;"></i> -->
+                                            <img src="" />
+                                        </div>
+
+                                        <div class="CirItem title-box CirItem4">
+                                            <h2 class="title"><span>Retain</span>
+                                                <p>Re-engage <br> to increase LTV</p>
+                                            </h2>
+                                            <!-- <i class="fa fa-floppy-o"></i> -->
+                                            <img src="" />
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fixed_bg">
+            <div class="fixed_cont">
+                <div class="layout__text_2023 add_bg_circle use_character_highlighter mb-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-12 ">
+                                <div class="intro-block">
+                                    <div class="description animated-text" style="font-size: 40px;">
+                                        <p style=" font-family: 'Inter-Regular' ">Our Audience Platform combines best-in-class Technology & Data Science to
+                                            assist brands
+                                            in Acquiring, Engaging & Retaining consumers across Web, App, and Social
+                                            channels.</p>
+                                        <p style=" font-family: 'Inter-Regular' ">Get your Brand at the centre of high-quality users
+                                            with our Intelligent Advertising Environment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="four-section four_section_homepage padding_50px" id="four_section_homepage">
+            <div class="container-fluid">
+
+                <div class="four-section-left">
+                    <!-- <h2 class="heading2 mb-0 pb-0">Since 2010
+                            </h2> -->
+                    <h2 class="heading2">Creating meaningful Audiences for meaningful Categories through our
+                        Platform.
+                    </h2>
+                    <ul class="list_one">
+                        <li>
+                            <span></span>
+                            <h4>
+                                <div class="counter">300</div>+
+                            </h4>
+                            <h5>Employees</h5>
+                        </li>
+                        <li>
+                            <span></span>
+                            <h4>
+                                <div class="counter">500</div>+
+                            </h4>
+                            <h5>Customers</h5>
+                        </li>
+                        <li>
+                            <span></span>
+                            <h4>
+                                <div class="counter">2,15,300</div>+
+                            </h4>
+                            <h5>Social Influencers</h5>
+                        </li>
+                    </ul>
+
+                </div>
+                <h6>6 Offices Worldwide </h6>
+                <ul class="list_three">
+                    <li>
+                        <div>
+                            <img src="data:image/webp;base64,UklGRm4DAABXRUJQVlA4TGEDAAAvWgANAI2QSduQu/OveCIi+h/BKIunCUG2Tf0pj7CcxkzbNj4HYWf5AxuEnpOZtm3MH2XOnUNQ9T8kADAn4d1/oAl13WCfAECCnNu2je3Z53Fs27Zt21Zn2zZ+QirbTirbtj9beXiC7o5TZaSQHEmya1VZ8+QKaSGeYSFfrhB3JEeS5MhRZFY1OBEAGkEJaMCBH944zvnd74RkM9NVMQHbjjPLERMBAAAGNCAup8Bidmo6AKQmAJIjQIIRCIKBAMGhJRMdJNm/vv7+M9pXBhorCgAAOBP+YlIDuq9PII1UoWR/Yn11cFY0O/rR+lHuze7VWAAkztBK6HZqdA6o++Rr95j6coxcP4snKjeH3Har3VZAZYYahE953Y+nvVwOS12vf0fety/0bePUORpfYnldDFCKgAElOQOExzTu8WHY9pl/bwzTyhnF8Jl8kHnaWXtyj+e7/b8/gjkDBAWYCGoAhC/jSc/3Gz9e9TrxSRtjr+Hr8FgKcCTW//1wmMe/XJ/79b4QOANiEoBVj7fDqdeZV0uEjykj8qXk3d7MThn9feeoqu3OTcPWj48EOYBnp3wlL/56/Xnrp/o848eYmo726Om45lYp+oGFss/rTcxQai0GZ8J19Kf0/gdGavqkcnL1qFw8sQb6HTdYtOBd237V1aOHzxADAGI2S++WvxGTvNJpFtOWPHxk25nldyYJd+xFPi65xG0AYhIA/Kj8D0ymcESx2S/beGhn8//lkF/F9k9c+05pcairTX6flgMAjKlPp/Thabf6sdsLVLKe8F3b9WnB5Jo/EeZHUyWyHJwJtWZeaU8f504F6tyTCWXCaRTLX3X2abf4Vl7kyxG9mZi8JQcAdJq4M5VUWFvFx+XrmMaPqnDOKUqg6ETx02B8bHwrWmVokBQEzoUx9mDB88Pu369iUIW+ToZbZpFkK2sUHbTd8tDih+tpR9sMAgSduT365WHZy8PKo3Pq2ltB8VPpOf8SZCPPfbmslUYFIGsWxr0+/qTFsv5ScPF208vU4ZHcOZSnHX+fAHH3D7t2KZLMo2o4eNHm1dnb02S/BZD49mXnFXnkoFY0/fkHKEsAjrxdGKdQh8LOJgDAz65mUgbw+en7bwvqqI8TNozAItb/T5mwiMUAUPB5lwGAQBIRgCgDAA=="
+                                alt="india" />
+                            <p>India</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="data:image/webp;base64,UklGRlYAAABXRUJQVlA4TEoAAAAvWgANAB8gJCCiD86a7oaQgGhe+R+MoqZtA+YOii7+GDv/8Q+wSYGiACAjJZRQQgolRBNNiWvX134R/Z8AWz2eeboI3n+OyjPOGw=="
+                                alt="india" />
+                            <p>Dubai</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="data:image/webp;base64,UklGRtIAAABXRUJQVlA4TMUAAAAvWgANAL+hqJEkpY6e518skwhGkSRJ6d5dwL8+RPA/k1HbSJLc/R4Myx/jmfnPpeW8hABAwM9KwgMAwAIJYebnWDErjBGzgMBH1iQcS1EURYeiKCuZ+dUcIQPIknADADBX8vVr/83gSpJk07q2bT7bb//7q++HiP5PwAZ8B7YV19zSfsUtH5bcyhFtwa2eZm7tPIEbI7g+gP/I/il4koFHYPEz5zYvBbd1LbntW8Xt3Gtu9wHWuw2415J35D53EL7A38LnsgA="
+                                alt="india" />
+                            <p>Indonesia</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="./img/xksa.jpeg.pagespeed.ic.gIPABRyapp.webp" alt="india" />
+                            <p>KSA</p>
+                        </div>
+                    </li>
+                    <!-- <li>
+                        <div>
+                            <img src="./img/russia.png" alt="india" />
+                            <p>Russia (Coming soon)</p>
+                        </div>
+                    </li> -->
+                </ul>
+
+                <div class="map_section" id="map_section">
+                    <h1 class="home-title" id="home-title">
+                        <span>SINCE</span>
+                        <span>2010</span>
+                    </h1>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="setion-three setion-five">
+            <div class="container px-0">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="three-section-left five-section-left">
+                            <h3>Customer Acquisition Journey</h3>
+
+                            <ul class="acc">
+                                <li class="acc__title">
+                                    <div class="img_b">
+                                        <img src="./img/left.png" alt="left">
+                                    </div>
+                                    <div class="list_details">
+                                        <h5>Intelligent Data Segmentation</h5>
+                                        <p style="display:block;">Advanced Audience Mapping & Analysis through multiple
+                                            attributes</p>
+                                    </div>
+                                </li>
+                                <li class="acc__title">
+                                    <div class="img_b">
+                                        <img src="./img/left.png" alt="left">
+                                    </div>
+                                    <div class="list_details">
+                                        <h5>Programmatic Advertising</h5>
+                                        <p>Ad serving through real-time bidding on multiple inventory pools </p>
+                                    </div>
+                                </li>
+                                <li class="acc__title">
+                                    <div class="img_b">
+                                        <img src="./img/left.png" alt="left">
+                                    </div>
+                                    <div class="list_details">
+                                        <h5>Retargeting Audiences</h5>
+                                        <p>Engage with interested audiences through behaviour-based data intelligence
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="acc__title">
+                                    <div class="img_b">
+                                        <img src="./img/left.png" alt="left">
+                                    </div>
+                                    <div class="list_details">
+                                        <h5>Supply Channels</h5>
+                                        <p>OEM & Operators, App Store Data, SDK Network, 1st Party Data, Bid Level Data,
+                                            OTT & more</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="three-section-right five-section-right">
+                            <img id="accordionImage" src="./img/cus-aq.png" alt="three">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="three-section-left five-section-left">
+                            <h3>Influencer Marketing</h3>
+                            <p class="paragraph">Influencer Marketing backed by Strategy, Video Production & Technology
+                                to reach out to relevant audiences</p>
+                            <ul class="influencermarketing">
+
+                                <li>
+                                    <div class="img_b">
+                                        <img src="./img/left.png" alt="left">
+                                    </div>
+                                    <div class="list_details">
+                                        <h5>Insights</h5>
+                                        <p style="display:block;">Leveraging data analytics to gain an understanding of
+                                            market trends, audience behaviour, and the effectiveness of various
+                                            influencers and make informed decisions.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img_b">
+                                        <img src="./img/left.png" alt="left">
+                                    </div>
+                                    <div class="list_details">
+                                        <h5>Strategy</h5>
+                                        <p>A carefully curated strategy backed by comprehensive insights, relevant
+                                            influencers, measurable KPIs, and campaign optimization for better results.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img_b">
+                                        <img src="./img/left.png" alt="left">
+                                    </div>
+                                    <div class="list_details">
+                                        <h5>Advocacy</h5>
+                                        <p>Establishing robust relationships with influencers for authentic and
+                                            influential brand endorsements that resonate with the target audience</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img_b">
+                                        <img src="./img/left.png" alt="left">
+                                    </div>
+                                    <div class="list_details">
+                                        <h5>Technology</h5>
+                                        <p>A technology-focused approach with AI and advanced analytics tools, enabling
+                                            efficient campaign management and optimization.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img_b">
+                                        <img src="./img/left.png" alt="left">
+                                    </div>
+                                    <div class="list_details">
+                                        <h5>Production</h5>
+                                        <p>Developing engaging content that reflects your brand's identity across
+                                            platforms, ensuring the message resonates with the targeted audience
+                                            effectively.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img_b">
+                                        <img src="./img/left.png" alt="left">
+                                    </div>
+                                    <div class="list_details">
+                                        <h5>Impact</h5>
+                                        <p>Closely monitoring campaign outcomes and ROI and utilizing these insights to
+                                            continuously improve our strategies to maximize market impact.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                
+                        </div>
+                    </div>
+                    <div class="col-lg-6 align-items-center">
+                        <div
+                            class="image-container three-section-right five-section-right d-flex justify-content-center">
+                            <video id="accordionImage1" width="300" autoplay muted playsinline loop>
+                                <source src="./img/Website Video.mp4"
+                                    type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="three-section-left five-section-left">
+                            <h3>Interactive Ads</h3>
+                            <p class="paragraph">Click-vista Innovation Labs focuses on custom-built Smartphone
+                                Sensors-based Interactive Ad experiences across digital channels, bringing creative
+                                automation to the core of your business.</p>
+                            <ul>
+
+                                <li>
+                                    <div class="img_b">
+                                        <img src="./img/left.png" alt="left">
+                                    </div>
+                                    <div class="list_details">
+                                        <h5>Smartphone Sensor Capabilities</h5>
+                                        <p>Leveraging the capabilities of smartphone sensors like touch, accelerometer,
+                                            or location, rich media formats deliver highly interactive user experiences
+                                            to create a deeper brand connection.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img_b">
+                                        <img src="./img/left.png" alt="left">
+                                    </div>
+                                    <div class="list_details">
+                                        <h5>High-user Engagement  </h5>
+                                        <p>Interaction between users and content, indicated by factors like high
+                                            click-through rates to achieve strong customer interest.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img_b">
+                                        <img src="./img/left.png" alt="left">
+                                    </div>
+                                    <div class="list_details">
+                                        <h5>Driving Purchase Intent</h5>
+                                        <p>Engaging consumers with immersive content to spark interest, influence
+                                            perception, and motivate the user towards purchasing the product or service.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+             
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 align-items-center">
+                        <div
+                            class="image-container three-section-right five-section-right d-flex justify-content-center">
+                            <video id="accordionImage1" width="350" autoplay muted playsinline loop>
+                                <source src="./img/minute-maid-300.mp4"
+                                    type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-six pt-0">
+            <div class="container px-0">
+                <div class="counter-section">
+                    <div class="left_shap">
+                        <img src="./img/left_shap.png" alt="left_shap">
+                    </div>
+                    <div class="right_shap">
+                        <img src="./img/right_shap.png" alt="right_shap">
+                    </div>
+                    <ul>
+                        <li>
+                            <h4>
+                                <div class="counter">2,18,34,275</div>+
+                            </h4>
+                            <h5>Transactions</h5>
+                        </li>
+                        <li>
+                            <h4>
+                                <div class="counter">1,00,87,18,846</div>+
+                            </h4>
+                            <h5>Connected Devices</h5>
+                        </li>
+                        <li>
+                            <h4>
+                                <div class="counter">2,15,300</div>+
+                            </h4>
+                            <h5>Influencers</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-seven pt-5 pb-5">
+            <h2 class="heading2">Proudly partnered with 500+ Brands
+            </h2>
+            <div class="container-fluid px-0">
+                <div class="slider-section-one">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-section">
+                                    <div class="slider-img">
+                                        <img src="./img/amazon.png" alt="Amazon">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/flipkart.png" alt="Flipkart.com">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/microsoft.png" alt="Microsoft">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/dell.png" alt="Dell">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/samsung.png" alt="Samsung">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/apple.png" alt="Apple">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/mcd.png" alt="MacDonalds">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/kfc.png" alt="KFC">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/nike.png" alt="Nike">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/adidas.png" alt="Adidas">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/crocs.png" alt="Crocs">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/citibank.png" alt="Citi Bank">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/amex.png" alt="American Express">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/kotak.png" alt="Kotak Bank">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/xunilever.png.pagespeed.ic.6_Vaqcqjn9.webp"
+                                            alt="Unilever">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/xnestle.png.pagespeed.ic.2t51ZfVE64.webp" alt="Nestle">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/xdabur.png.pagespeed.ic.Xu9F8YdqSu.webp" alt="Dabur">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/xcoke.png.pagespeed.ic.IT-Hz0bwUf.webp" alt="Coca Cola">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/xstarbucks.png.pagespeed.ic.Ics_MW9Sp_.webp"
+                                            alt="Starbucks">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/xgsk.png.pagespeed.ic.cbn5yQSNdn.webp" alt="GSK">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/xemirates.png.pagespeed.ic.4HgzQzt846.webp"
+                                            alt="Emirates">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/xmcafee.png.pagespeed.ic._oBRt_m0B_.webp" alt="Mcafee">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/xpaypal.png.pagespeed.ic.66EUUi-9Lt.webp" alt="Paypal">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/xbooking.png.pagespeed.ic.GANcSZAf-5.webp"
+                                            alt="Booking.com">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/xhdfcsecurity.png.pagespeed.ic.tOYXaExA3o.webp"
+                                            alt="HDFC Securities">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/xmerc.png.pagespeed.ic.c34MrvBwB8.webp" alt="Mercedes">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/xbmw.png.pagespeed.ic.D4I-pldWMI.webp" alt="BMW">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="data:image/webp;base64,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"
+                                            alt="Netflix">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="data:image/webp;base64,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"
+                                            alt="Phillips">
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="./img/xpokerstar.png.pagespeed.ic.lBrqMmXtNx.webp"
+                                            alt="Airtel">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </section>
+
+        <style>
+            @media (max-width:600px) {
+                .slid-er .slides {
+                    flex-direction: column
+                }
+            }
+        </style>
+        <section class="section-eight pt-0 px-0">
+            <h2 class="heading2">Award-Winning Innovation Lab
+                <p class="section-eight-paragraph mb-0"> Interactive Ad Gallery</p>
+            </h2>
+            <div class="slid-er">
+                <div class="slides" id="slides">
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="./img/fewfwe.jpeg"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="./img/ffca97d7-40bd-45e7-94bc-d2ef18d908dc.jpg"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="./img/3232.jpg"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="./img/20230828-095320.jpg"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="./img/ad_back7-3.jpg"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="./img/target02-300-1.jpg"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="./img/target03-300-1.jpg"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688321223_WhatsApp%20Image%202023-07-01%20at%2014.01.07.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=054830d088cdf033d0857f71e2ff4e2e77d18ff6f2068871a385701ac2c3798d"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688197618_WhatsApp%20Image%202023-07-01%20at%2013.14.44.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=9bcf5431bd518f13b1091eb9e114134645eb60ce1c5f9c261f66e46372c950fb"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688197985_WhatsApp%20Image%202023-07-01%20at%2013.19.23.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=f641ad0a4d1e6dd88ff3cde6df0e73f96947c2bfaf64372ff9d61af13e0e8ada"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688198683_WhatsApp%20Image%202023-07-01%20at%2013.26.13.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=96295260a0b66c5adfc41d851183bc3137b49afb8c34865ef1f351371cd7cbcc"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688197015_WhatsApp%20Image%202023-07-01%20at%2013.04.55.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=d33e3e3f706b81442b4ddf9acf1e75603ea4b5c203eeee0a2a2033a4765f5371"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1689158685_WhatsApp%20Image%202023-07-12%20at%2012.28.37.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=8ecbd22d234a408fae3fb989ddf488652632a9845af18f0ee64c9be78e028f55"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688197401_WhatsApp%20Image%202023-07-01%20at%2013.08.52%20%281%29.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=c52280d9ef8f6bc7f9e25d9bd7849d69e28f0097c82ca143c66b6eeb565b5c10"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688321151_WhatsApp%20Image%202023-07-01%20at%2014.51.12.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=c845f493055ffe62474fffbc19121d819146814d87c743318f26a98f02c08578"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688321223_WhatsApp%20Image%202023-07-01%20at%2014.01.07.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=054830d088cdf033d0857f71e2ff4e2e77d18ff6f2068871a385701ac2c3798d"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688197618_WhatsApp%20Image%202023-07-01%20at%2013.14.44.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=9bcf5431bd518f13b1091eb9e114134645eb60ce1c5f9c261f66e46372c950fb"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688197985_WhatsApp%20Image%202023-07-01%20at%2013.19.23.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=f641ad0a4d1e6dd88ff3cde6df0e73f96947c2bfaf64372ff9d61af13e0e8ada"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688198683_WhatsApp%20Image%202023-07-01%20at%2013.26.13.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=96295260a0b66c5adfc41d851183bc3137b49afb8c34865ef1f351371cd7cbcc"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688197015_WhatsApp%20Image%202023-07-01%20at%2013.04.55.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=d33e3e3f706b81442b4ddf9acf1e75603ea4b5c203eeee0a2a2033a4765f5371"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1689158685_WhatsApp%20Image%202023-07-12%20at%2012.28.37.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=8ecbd22d234a408fae3fb989ddf488652632a9845af18f0ee64c9be78e028f55"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688197401_WhatsApp%20Image%202023-07-01%20at%2013.08.52%20%281%29.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=c52280d9ef8f6bc7f9e25d9bd7849d69e28f0097c82ca143c66b6eeb565b5c10"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688321151_WhatsApp%20Image%202023-07-01%20at%2014.51.12.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=c845f493055ffe62474fffbc19121d819146814d87c743318f26a98f02c08578"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688321223_WhatsApp%20Image%202023-07-01%20at%2014.01.07.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=054830d088cdf033d0857f71e2ff4e2e77d18ff6f2068871a385701ac2c3798d"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="slides" id="slides1">
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688199525_WhatsApp%20Image%202023-07-01%20at%2013.43.44.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=aeddc6b4db059fd60db3a86179863bb72884507ce2c9231a2a7eee0ac89df0ac"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688321178_WhatsApp%20Image%202023-07-01%20at%2014.40.47.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=cd4d4bcf0c353b8832e7010cab59c4ab095794a291fbaa9af1c97f1080079698"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688321345_WhatsApp%20Image%202023-07-01%20at%2014.19.47.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=43fcee7155b5a3e751fd40d7c593ec96fc1e86051e6f6caf9139aa0887b01312"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688199596_WhatsApp%20Image%202023-07-01%20at%2013.47.43.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=8b2254d792038661dec667785ff89c1a472025b0479d71bb6c851da92229d1de"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688321316_WhatsApp%20Image%202023-07-01%20at%2014.31.39.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=07d6294c10403b049150e98c15b2d7ee2c9dd36903fbf368318b3041b8d9ab0f"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688198718_WhatsApp%20Image%202023-07-01%20at%2013.30.13.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=d48bdc0610a2b7458610c8bc7d6f1d6dbeae020650518a3d591f0ec0a3cc3aec"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688199380_WhatsApp%20Image%202023-07-01%20at%2013.37.49.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=7b54870e7f6cef45455491c52611b23fd60062e882cfbf8934e9ee9e5fcd369d"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688199525_WhatsApp%20Image%202023-07-01%20at%2013.43.44.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=aeddc6b4db059fd60db3a86179863bb72884507ce2c9231a2a7eee0ac89df0ac"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688321178_WhatsApp%20Image%202023-07-01%20at%2014.40.47.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=cd4d4bcf0c353b8832e7010cab59c4ab095794a291fbaa9af1c97f1080079698"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688321345_WhatsApp%20Image%202023-07-01%20at%2014.19.47.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=43fcee7155b5a3e751fd40d7c593ec96fc1e86051e6f6caf9139aa0887b01312"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688199596_WhatsApp%20Image%202023-07-01%20at%2013.47.43.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=8b2254d792038661dec667785ff89c1a472025b0479d71bb6c851da92229d1de"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a >
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688321316_WhatsApp%20Image%202023-07-01%20at%2014.31.39.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=07d6294c10403b049150e98c15b2d7ee2c9dd36903fbf368318b3041b8d9ab0f"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688198718_WhatsApp%20Image%202023-07-01%20at%2013.30.13.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=d48bdc0610a2b7458610c8bc7d6f1d6dbeae020650518a3d591f0ec0a3cc3aec"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688199380_WhatsApp%20Image%202023-07-01%20at%2013.37.49.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=7b54870e7f6cef45455491c52611b23fd60062e882cfbf8934e9ee9e5fcd369d"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688199525_WhatsApp%20Image%202023-07-01%20at%2013.43.44.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=aeddc6b4db059fd60db3a86179863bb72884507ce2c9231a2a7eee0ac89df0ac"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688321178_WhatsApp%20Image%202023-07-01%20at%2014.40.47.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=cd4d4bcf0c353b8832e7010cab59c4ab095794a291fbaa9af1c97f1080079698"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688321345_WhatsApp%20Image%202023-07-01%20at%2014.19.47.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=43fcee7155b5a3e751fd40d7c593ec96fc1e86051e6f6caf9139aa0887b01312"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688199596_WhatsApp%20Image%202023-07-01%20at%2013.47.43.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=8b2254d792038661dec667785ff89c1a472025b0479d71bb6c851da92229d1de"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a >
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688321316_WhatsApp%20Image%202023-07-01%20at%2014.31.39.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=07d6294c10403b049150e98c15b2d7ee2c9dd36903fbf368318b3041b8d9ab0f"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688198718_WhatsApp%20Image%202023-07-01%20at%2013.30.13.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=d48bdc0610a2b7458610c8bc7d6f1d6dbeae020650518a3d591f0ec0a3cc3aec"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <a>
+                                <img src="https://richmediavideos.s3.ap-south-1.amazonaws.com/1688199380_WhatsApp%20Image%202023-07-01%20at%2013.37.49.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUQQDTKYXUYYOP24R%2F20231229%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20231229T085117Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=7b54870e7f6cef45455491c52611b23fd60062e882cfbf8934e9ee9e5fcd369d"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </section>
+        <script>document.addEventListener("DOMContentLoaded", function () { let xOffset = 0; let xOffset1 = 0; let isMouseIn = false; let isMouseIn2 = false; const slides = document.getElementById("slides"); const slides1 = document.getElementById("slides1"); const slideElements = slides.querySelectorAll(".slide"); const slideCount = slideElements.length; const slideElements1 = slides1.querySelectorAll(".slide"); const slideCount1 = slideElements1.length; function translate() { let offsetIncrementor = isMouseIn ? 0.1 : 0.2; if (xOffset >= 200 * slideCount) xOffset = 0; else xOffset = xOffset + offsetIncrementor; slides.style.transform = "translateX(-" + xOffset + "px)"; } function translate2() { let offsetIncrementor = isMouseIn2 ? 0.1 : 0.2; if (xOffset1 <= 0) xOffset1 = 200 * slideCount1; else xOffset1 = xOffset1 - offsetIncrementor; slides1.style.transform = "translateX(-" + xOffset1 + "px)"; } slides.addEventListener("mouseover", function (event) { isMouseIn = true; }); slides1.addEventListener("mouseover", function (event) { isMouseIn2 = true; }); slides1.addEventListener("mouseout", function (event) { isMouseIn2 = false; }); slides.addEventListener("mouseout", function (event) { isMouseIn = false; }); function checkScreenSize() { if (window.innerWidth < 768) { clearInterval(translate2); clearInterval(translate); } else { setInterval(translate2, 0); setInterval(translate, 0); } } checkScreenSize(); window.addEventListener('resize', checkScreenSize); });</script>
+
+        <section id="testim" class="testim">
+            <h2 class="heading2 text-center">Here’s what
+                our clients are saying
+                about us
+            </h2>
+            <div class="wrap">
+                <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+
+                <div id="testim-content" class="cont">
+
+                    <div class="active">
+                        <div class="img">
+                            <img src="./img/gauravflipkart.jpg">
+                        </div>
+                        <h2 style=" font-family: 'Inter-Regular' ">Mr. Gaurav Deshpande</h2>
+                        <p class="mb-2" style="font-size:14px; font-family: 'Inter-Regular' ">Brand Manager, Mobiles, Flipkart</p>
+                        <p style=" font-family: 'Inter-Regular' ">“click-vista is our trusted Influencer Marketing partner. The team’s collaborative
+                            approach and responsiveness to our needs have helped us deliver well-planned
+                            campaigns successfully. The team has become our invaluable partner in creating brand
+                            awareness through Influencer and PR campaigns."
+                        </p>
+                        <p><img src="data:image/webp;base64,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"
+                                alt=""></p>
+                    </div>
+
+                    <div>
+                        <div class="img">
+                            <img src="./img/nitinsethi.png">
+                        </div>
+                        <h2 style=" font-family: 'Inter-Regular' ">Mr. Nitin Sethi</h2>
+                        <p class="mb-2" style="font-size:14px;font-family: 'Inter-Regular' ">Chief Digital Officer, Consumer Businesses at Adani
+                            Group | Founding Leader of Adani Digital Labs
+                        </p>
+                        <p style=" font-family: 'Inter-Regular' ">“The team at Click-vista is nothing short of specialists <br> when it comes to performance
+                            marketing! They listen and are always open to new customer engaging ideas which
+                            draws more folks who want to fly with <br> us & it is only increasing."
+                        </p>
+                        <p><img src="./img/adani.png" width="129" alt=""></p>
+                    </div>
+
+                    <div>
+                        <div class="img">
+                            <img src="./img/danish.png">
+                        </div>
+                        <h2 style=" font-family: 'Inter-Regular' ">Mr. Danish Ahmed</h2>
+                        <p class="mb-2" style="font-size:14px; font-family: 'Inter-Regular' ">Online Marketing Manager, Alshaya Group</p>
+                        <p style=" font-family: 'Inter-Regular' ">“Our partnership with Click-vista has been nothing short of phenomenal. The team
+                            keenly understands the business and has delivered successful campaigns with
+                            out-of-the-box thinking and seamless execution. We hope to reach greater heights
+                            with Click-vista as our digital partner."
+                        </p>
+                        <p><img src="./img/alshaya.png" width="129" alt=""></p>
+                    </div>
+
+                    <div>
+                        <div class="img">
+                            <img src="./img/srikrishanmurty.png">
+                        </div>
+                        <h2 style=" font-family: 'Inter-Regular' ">Mr. Srikrishna Moorthy</h2>
+                        <p class="mb-2" style="font-size:14px; font-family: 'Inter-Regular' " >Vice President, Digital Initiatives, Kotak Mahindra Bank
+                        </p>
+                        <p style=" font-family: 'Inter-Regular' ">“We have been associated with Click-vista since 2013. Our professional stint with them
+                            grows stronger day by day. They are meticulous, diligent and trustworthy in their
+                            approach for driving performance-based initiatives for Kotak Mahindra Bank Products.
+                            Their sincerity and dedication is commendable."
+                        </p>
+                        <p><img src="./img/kotak.png" width="129" alt=""></p>
+                    </div>
+
+                    <div>
+                        <div class="img">
+                            <img src="./img/sbdul.png">
+                        </div>
+                        <h2 style=" font-family: 'Inter-Regular' ">Mohammed Abdul Hai</h2>
+                        <p class="mb-2" style="font-size:14px;font-family: 'Inter-Regular' ">Performance Marketing Manager, Shahid</p>
+                        <p style=" font-family: 'Inter-Regular' ">“We look at Click-vista as our extended arm to ensure the successful delivery of
+                            performance marketing campaigns. The team brings the perfect <br> mix of insights and
+                            creative expression to reach our target audience and onboard them as customers."
+                        </p>
+                        <p><img src="data:image/webp;base64,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"
+                                alt=""></p>
+                    </div>
+
+                </div>
+                <ul id="testim-dots" class="dots">
+                    <li class="dot active"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="pt-0 section-eight padding_50px" style="position: relative;top: -115px;">
+            <h2 class="heading2">We’re making news</h2>
+
+
+            <div class="container-fluid px-0">
+                <div class="slider-section-one">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-section">
+                                    <div class="slider-img">
+                                        <a class="text-center">
+                                            <img src="./img/xetbrand.png.pagespeed.ic.aLghfvKqiT.webp"
+                                                alt="Brandequity.com">
+                                        </a>
+                                    </div>
+                                    <div class="slider-img">
+                                        <a class="text-center">
+                                            <img src="./img/xbusiness.png.pagespeed.ic.ECuevDggTi.webp"
+                                                alt="Business Standard">
+                                        </a>
+                                    </div>
+                                    <div class="slider-img">
+                                        <a class="text-center">
+                                            <img src="./img/xfinancial.png.pagespeed.ic.N7dlCxuVta.webp"
+                                                alt="Financial Express">
+                                        </a>
+                                    </div>
+                                    <div class="slider-img">
+                                        <a class="text-center">
+                                            <img src="./img/xtoi.png.pagespeed.ic.lilEMNeWfM.webp"
+                                                alt="Times of India">
+                                        </a>
+                                    </div>
+                                    <div class="slider-img">
+                                        <a class="text-center">
+                                            <img src="./img/xenterpreneur.png.pagespeed.ic.mlsMjJq39d.webp"
+                                                alt="Enterpreneur India"></a>
+                                    </div>
+                                    <div class="slider-img">
+                                        <a class="text-center">
+                                            <img src="./img/xmoneycontrol.png.pagespeed.ic.R3vZZRBJ1D.webp"
+                                                alt="Moany Control"></a>
+                                    </div>
+                                    <div class="slider-img">
+                                        <a class="text-center" >
+                                            <img src="./img/xthrprint.png.pagespeed.ic.mg6fvvqBdG.webp"
+                                                alt="The Print"></a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-eleven section_eleven_homepage pt-0">
+            <div class="featured-section">
+                <div class="px-0">
+                    <div class="row">
+                        <div class="col-lg-6 d-flex align-items-center">
+                            <div class="featured-left-section">
+                                <h3>
+                                    <a class="text-white" style="text-decoration:none;" href="contact.php">
+                                        Looking forward to working with us?
+                                    </a>
+                                </h3>
+                                <p>We are hiring across verticals</p>
+                                <p>Write to us to <a href="mailto:Contact@click-vista.com;">Contact@click-vista.com</a> to join the
+                                    growth madness</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <div class="featured-right-section">
+                                <div class="last-shap">
+                                    <img src="./img/icb-home.jpg" alt="last-shap" />
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <section class="footer footer-section-one padding_50px">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="footer-box box-one text-center">
+                                <div class="footer-logo">
+                                    <img src="data:image/webp;base64,UklGRioDAABXRUJQVlA4TB4DAAAvq8AEEL8gFkzmL90Xw/zPP0G2Lf4IXoJJmmo7Bms4AgAc7QMAgIJtbYHb5kOAikdIvxUG3v7X+gMauRuI6P8EmJkVLcOjDTgta3o3s0PzYmZFko66vEfNQ93PmpZ3h95KlF5m9tA0mZklTR9m9pCymVmUZOvnPWoe6n4GsFl4DJYtugq0xS9grrPZ4iSyX13srB96AYTJC6BOIsBLKgBZEtvPMInsV1cn8WR3/PcnGPGq0Nn9l90x6e6cFJcW6SPOcNWvfOx8mP4E7aon/jwnUQNoLjK9uQZ0TUbRZ9SLqqIzfCsplw689ZUjxlQ6QFj9lGWS1IEepFA6VXoBBEnH7JAUAY7JSAqLI8YYSwfGxk9ZJqp+TFIGGFnTyhm+UyTp7vLqpm2AQ9NDUnaHpDZrkoqLrqfQ8qLIZ4C0umld9cC9XdLyiPoD2aUvvGfTATQpAH0AQWrAKUk5hpNP5PIVejABMH36rSfQdVED6EdeVYCgAlgDiiJAcYqdz8ZVTybZ5b/TzKwBI228bX53hwO6xUl2hwzIB2A6XHSx81kGSKu3ze9i6/Z3liNqY12dfmeARUnqQNOAoQAMnUCTL3wUcge6Vuu6uv8/6Pkylb6gB0kVoAD/pAYUgHLFbv1Gcvnv9NZa6wB51ZfHTEpHm/CWFN0AilSB4eJXfrXRl8cqDMAuOa8p8i+gr266MlZHkNSYBykyb/rCqNq5ab1QA8irElwBRph1oH4SAdJFJTopuySpzpok9Vm55F3rCZC+lN24zx40FwCekx+A/Ely+ZpEj5PksqQwK+41i5cUKQ6gh+/ojX+XnI8GmCQ1AIsKD4CuD8Lp4iWxA5akcLogSW0SXZ40XaUD4Pml0N1ulhQH23lj9N47vmux2SRjOjq+yR/u1HS4cp0aQN7YbBuKfWsU+bxVtbF7vya8J/MRJ8G9Zi8XvhAHMOJ3pLrRouaxL8ZdV4yia6TSVz1p3oA0y8A/fUEVoF1hZlYWikcbjP7K2i1tMFoNWr5s8wjywfYfTirvE/r7CFrezUzzYGb3VTYzS5LMzPJELzOzJAXbfwA="
+                                        class="m-auto" alt="footer-logo" />
+                                </div>
+                                <p class="m-0">Click-vista is a global Ad Tech platform <br> with more than 1 Billion
+                                    connected
+                                    devices
+                                    enabling <br>
+                                    customer acquisition & engagement.</p>
+                                <p class="m-0">INDIA &nbsp | &nbsp DUBAI &nbsp | &nbsp INDONESIA &nbsp | &nbsp KSA &nbsp
+                                </p>
+                                <p class="m-0">&copy; <script>document.write(new Date().getFullYear())</script> Click-vista. All rights reserved.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="footer-box box-menu">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <div class="footer-box box-menu">
+                                <h4>Contact Us</h4>
+                                <ul>
+                                    <li><a >11th & 6th Floor, M3M Cosmopolitan, <br> Golf Course Ext Rd, Sector 66, <br> Gurugram, Haryana 122018</a></li>
+                                    <li><a target="_blank" href="mailto:support@click-vista.com">support@click-vista.com</a></li>
+                                    <li>
+                                        <ul style="flex-direction:row;justify-content: center;margin-top:10px">
+                                            <li><a><img src="data:image/webp;base64,UklGRrQAAABXRUJQVlA4TKgAAAAvF8AEEK+goG0bxvxJ7w/D/M8/QbYt3glegkmaajsGxWDEsecBAMCwbRtHuny/73/x/sNe+xEi+j8BdI7ne89ACCzWsitP0/7Bl6y2qeqDIaWhFFT/fMIlnZaNDT7DofwcQ1MEzDNJ39dxrpXmFUj6cwTWXwLA9cNDMaauuWDJexLlQ71WIXZEGi16w0VjmJPqB+Vpjqer7iv1+VPdY6DZ5uN933MdaQY="
+                                                        alt="tw" />
+                                                </a></li>
+                                            <li><a>
+                                                    <img src="data:image/webp;base64,UklGRr4AAABXRUJQVlA4TLIAAAAvF8AFEJdgIG2b+De97Tcx//NPkG2b+gg2lCeWgwDhEECAIIDo4bCRJKnpYzHLYXthJ/9s7+FCiOj/BNAvZzxShhvTFpr82sSRmk4fnHp9dg5N3hF3SnLAcnQbwE9SGnw1fAojBabxB8Ds36j4xA58NawxsYFpHLnq0arxxvjuPe/UzXi196L2rloLlFq/PS89SRuYxkas+YLlijTAVzhtfVfpe86lM7bfTBjT5tFELfQB"
+                                                        alt="fb" />
+                                                </a></li>
+                                            <li><a>
+                                                    <img src="data:image/webp;base64,UklGRpQAAABXRUJQVlA4TIcAAAAvF8AFEJ8gFkzmL92Vw/zPP4EgZIoFmoBgkqbajkEa4AAYugcAADBuI0lRHd/y7nT+2R7DP6L/EzCbrl10tV226aZ0jQfKJSOQLonQt0tUouluq6UecEDTBEPugL6d69kczkHXAdRzq7QA6ZxJFQinekkNcH9XnHOm7FyQZM65snWxXbZcZAsA"
+                                                        alt="in" />
+                                                </a></li>
+                                            <li><a>
+                                                    <img src="data:image/webp;base64,UklGRlYCAABXRUJQVlA4TEoCAAAvF8AFEH/loI0kRyr+bD+HvRnTcNi2kSOp/24/h70ZOmzbyJHUf7efw94MHTaSGzdH0kn6b/WPJPI2KoGKaqCKKqtEV4AKACoqqmt3D6LqCghV/asDVYUbXFG5ogI3UFFN5apBdauySqjaiKqgaqDKFYhqQbsbu9sV3+/3B5C72wAFV97dBrvr67q6AuwuoCosRBVVnXP+55yzu4bf7/fzui5X1+7u3+/XVUNVVQFXrgwhq0ZWMTNTMTNTGb7dbs///z+/329VfL/f9///n5lhZhrAYHf5fD6/3eWcs2YGAF3XtXY3MdA5Z9AIzDnnnHM2rpkZCBsFXdd1QMXMbNx31xUVOKB6wJjqoKAKBDwzgamoGlUV9szM7qoCqgJCgt1ld4EgwbZt0472jm3btm3btm3btp1CypWfRr77b7oQ0f8JAPA6VBQTKRlfMfEO5XwwaWAjqUmm7wNYMNOo3PgFybfZHIYd4Hu47jA+q2pi2vsgqyH/kus3pSrgeDHX1J2cABglEzDHslj9H4KLVjfStf5825wdeNOLjrCAct2fJhmZpgxYPV5WAZZ2opsQNt8Djy0MvAZkutkAYSc75YIMb0UPRl5Sd0yA2mReySWqS+GlDLyNnkTPJi6QamOXqIeNcmceGr1fgG99Gu6noigBVpxonZdvRccliOK0vipwVGNFWlUdQvnb2KeccwLg797eH4g3mT3Gkg+RdC0H/qey/eNTkzqeT9gNZeHiT6mtOh3tGQA7SaSJg6QV6TwN5b+RUl9bSfus/lsA"
+                                                        alt="in" />
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="second-footer-section pb-0 pt-0 padding_50px">
+                <div class="container-fluid px-0">
+
+
+                </div>
+            </section>
+        </footer>
+        <script src="https://www.icubeswire.com/assets/js/bootstrap.bundle.min.js.pagespeed.ce.CqjWTnJsSl.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.js"
+            integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <script>$(document).ready(function () { $('.navbar-toggler').on('click', function () { $(this).toggleClass('active'); }) })</script>
+        <script></script>
+        <script>$(window).scroll(function () { var scroll = $(window).scrollTop(); if (scroll > 500) { $(".fixed_stripe").addClass("active"); } else { $(".fixed_stripe").removeClass("active"); } })</script>
+    </main>
+
+    <script>"use strict"; var testim = document.getElementById("testim"), testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children), testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children), testimLeftArrow = document.getElementById("left-arrow"), testimRightArrow = document.getElementById("right-arrow"), testimSpeed = 4500, currentSlide = 0, currentActive = 0, testimTimer, touchStartPos, touchEndPos, touchPosDiff, ignoreTouch = 30; window.onload = function () { function playSlide(slide) { for (var k = 0; k < testimDots.length; k++) { testimContent[k].classList.remove("active"); testimContent[k].classList.remove("inactive"); testimDots[k].classList.remove("active"); } if (slide < 0) { slide = currentSlide = testimContent.length - 1; } if (slide > testimContent.length - 1) { slide = currentSlide = 0; } if (currentActive != currentSlide) { testimContent[currentActive].classList.add("inactive"); } testimContent[slide].classList.add("active"); testimDots[slide].classList.add("active"); currentActive = currentSlide; clearTimeout(testimTimer); testimTimer = setTimeout(function () { playSlide((currentSlide += 1)); }, testimSpeed); } testimLeftArrow.addEventListener("click", function () { playSlide((currentSlide -= 1)); }); testimRightArrow.addEventListener("click", function () { playSlide((currentSlide += 1)); }); for (var l = 0; l < testimDots.length; l++) { testimDots[l].addEventListener("click", function () { playSlide((currentSlide = testimDots.indexOf(this))); }); } playSlide(currentSlide); document.addEventListener("keyup", function (e) { switch (e.keyCode) { case 37: testimLeftArrow.click(); break; case 39: testimRightArrow.click(); break; case 39: testimRightArrow.click(); break; default: break; } }); testim.addEventListener("touchstart", function (e) { touchStartPos = e.changedTouches[0].clientX; }); testim.addEventListener("touchend", function (e) { touchEndPos = e.changedTouches[0].clientX; touchPosDiff = touchStartPos - touchEndPos; console.log(touchPosDiff); console.log(touchStartPos); console.log(touchEndPos); if (touchPosDiff > 0 + ignoreTouch) { testimLeftArrow.click(); } else if (touchPosDiff < 0 - ignoreTouch) { testimRightArrow.click(); } else { return; } }); };</script>
+    <script>function changeImage(index) { var imageElement = document.getElementById("accordionImage"); var accordionImage1 = document.getElementById("accordionImage1"); var images = ["./img/acq-laptop.png", "./img/right.png", "./img/acq-laptop.png", "./img/right.png"]; imageElement.src = images[index]; accordionImage1.src = images[index]; }</script>
+    <script>var maxData = 4; let i = 2; $(document).ready(function () { var radius = 200; var fields = $('.itemDot'); var container = $('.dotCircle'); var width = container.width(); radius = width / 2.5; var height = container.height(); var angle = 0, step = (2 * Math.PI) / fields.length; fields.each(function () { var x = Math.round(width / 1.9 + radius * Math.cos(angle) - $(this).width() / 2); var y = Math.round(height / 2.1 + radius * Math.sin(angle) - $(this).height() / 2); if (window.console) { console.log($(this).text(), x, y); } $(this).css({ left: x + 'px', top: y + 'px' }); angle += step; }); $('.itemDot').click(function () { var dataTab = $(this).data("tab"); $('.itemDot').removeClass('active'); $(this).addClass('active'); $('.CirItem').removeClass('active'); $('.CirItem' + dataTab).addClass('active'); i = dataTab; $('.dotCircle').css({ "transform": "rotate(" + (360 - (i - 1) * 36) + "deg)", "transition": "2s" }); $('.itemDot').css({ "transform": "rotate(" + ((i - 1) * 36) + "deg)", "transition": "1s" }); }); setInterval(function () { var dataTab = $('.itemDot.active').data("tab"); if (dataTab > maxData || i > maxData) { dataTab = 1; i = 1; } $('.itemDot').removeClass('active'); $('[data-tab="' + i + '"]').addClass('active'); $('.CirItem').removeClass('active'); $('.CirItem' + i).addClass('active'); i++; $('.dotCircle').css({ "transform": "rotate(" + (360 - (i - 2) * 36) + "deg)", "transition": "2s" }); $('.itemDot').css({ "transform": "rotate(" + ((i - 2) * 36) + "deg)", "transition": "1s" }); }, 5000); });</script>
+    <script>$('.counter').each(function () { var $this = $(this), countTo = $this.attr('data-count'); $({ countNum: $this.text() }).animate({ countNum: countTo }, { duration: 8000, easing: 'linear', step: function () { $this.text(Math.floor(this.countNum)); }, complete: function () { $this.text(this.countNum); } }); });</script>
+
+
+    <!-- Initialize Swiper -->
+    <script>var swiper = new Swiper(".mySwiper", { slidesPerView: 1, spaceBetween: 30, loop: true, autoPlay: true, pagination: { el: ".swiper-pagination", clickable: true, }, });</script>
+    <script>var swiper = new Swiper(".myGallerySwiper", { slidesPerView: 1, spaceBetween: 10, autoplay: true, loop: true, navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev", }, breakpoints: { 640: { slidesPerView: 1, spaceBetween: 10, }, 768: { slidesPerView: 2, spaceBetween: 10, }, 1024: { slidesPerView: 4, spaceBetween: 20, }, }, });</script>
+    <script>var swiper = new Swiper(".myClientsSwiper", { effect: "coverflow", grabCursor: true, centeredSlides: true, slidesPerView: "auto", loop: true, coverflowEffect: { rotate: 0, stretch: 0, depth: 0, slideShadows: false, }, breakpoints: { 640: { slidesPerView: 1.5, spaceBetween: 20, }, 768: { slidesPerView: 3, spaceBetween: 40, }, 1024: { slidesPerView: 2.3, spaceBetween: 50, }, }, pagination: { el: ".swiper_pagination", clickable: true, }, });</script>
+    <script>var swiper = new Swiper(".myfeaturedSwiper", { slidesPerView: 2, spaceBetween: 10, navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev", }, breakpoints: { 640: { slidesPerView: 2, spaceBetween: 20, }, 768: { slidesPerView: 4, spaceBetween: 20, }, 1024: { slidesPerView: 5, spaceBetween: 20, }, }, });</script>
+    <script data-cfasync="false" type='text/javascript'
+        src='https://www.criteo.com/wp-content/plugins/motionpage/assets/js/gsap/gsap.min.js?ver=3.11.4'
+        id='mp-gsap-js'></script>
+    <script data-cfasync="false" type='text/javascript' id='mp-SplitText-js-before'>
+        function _mp_GENSEL(e) {
+            const n = [];
+            for (; e.tagName;) {
+                let t = 0;
+                if (e.parentNode) {
+                    const n = e.parentNode.children;
+                    for (; t < n.length && n[t] !== e;) t++
+                }
+                n.unshift(e.nodeName + (t > 0 ? `:nth-child(${t + 1})` : "")), e = e.parentNode
+            }
+            return n.join(" > ")
+        }
+    </script>
+    <script data-cfasync="false" type='text/javascript'
+        src='https://www.criteo.com/wp-content/plugins/motionpage/assets/js/gsap/SplitText.min.js?ver=3.11.4'
+        id='mp-SplitText-js'></script>
+    <script data-cfasync="false" type='text/javascript'
+        src='https://www.criteo.com/wp-content/plugins/motionpage/assets/js/gsap/ScrollTrigger.min.js?ver=3.11.4'
+        id='mp-ScrollTrigger-js'></script>
+    <script data-cfasync="false" type='text/javascript' id='mp-ScrollTrigger-js-after'>
+        window._$W = window;
+        addEventListener("DOMContentLoaded", () => {
+            document.body.style.overflowX = "hidden";
+            gsap.registerPlugin({
+                name: "transition",
+                init(t, e, n) {
+                    return this.target = t, this.tween = n, 1
+                },
+                render(t, {
+                    target: e,
+                    tween: n
+                }) {
+                    void 0 !== (null == e ? void 0 : e.style) && n && (e.style.transition = "unset")
+                }
+            });
+            gsap.defaults({
+                duration: 5,
+                transition: "unset"
+            });
+            gsap.config({
+                nullTargetWarn: false
+            });
+            if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                window._mp_1685519873_ST0 = new SplitText(".use_character_highlighter .animated-text", {
+                    type: "chars,words"
+                }), window._mp_1685519873 = [], gsap.utils.toArray(".use_character_highlighter .animated-text")
+                    .forEach(item => {
+                        let _n = "_mp_1685519873_" + (_mp_1685519873.length + 1);
+                        _mp_1685519873.push(_n);
+                        let _t = gsap.timeline({
+                            scrollTrigger: {
+                                scrub: 1,
+                                trigger: item,
+                                start: "top 60%",
+                                end: "bottom 60%"
+                            }
+                        }).from(_mp_1685519873_ST0.chars.filter(s => s.closest(item.id ? `#${item.id}` :
+                            _mp_GENSEL(item))), {
+                            stagger: {
+                                from: "start",
+                                each: 1
+                            },
+                            autoAlpha: .25
+                        }, 0);
+                        window[_n] = _t
+                    });
+                if (matchMedia("screen and (min-width: 768px)").matches) {
+                    window._mp_1685519874 = gsap.timeline({
+                        scrollTrigger: {
+                            scrub: 1,
+                            trigger: ".criteo-dashboard-image",
+                            start: "top 100%",
+                            end: "bottom 80%"
+                        }
+                    }), _mp_1685519874.from(".criteo-dashboard-image", {
+                        scale: 1.4
+                    }, 0);
+                }
+                if (matchMedia("screen and (min-width: 768px)").matches) {
+                    window._mp_1685519876 = gsap.timeline({
+                        scrollTrigger: {
+                            scrub: 1,
+                            trigger: ".criteo_dashboard_popups",
+                            start: "top 100%",
+                            end: "bottom 80%"
+                        }
+                    }), _mp_1685519876.from(".criteo_dashboard_popups .popup", {
+                        autoAlpha: 0
+                    }, 0);
+                }
+                if (matchMedia("screen and (min-width: 992px)").matches) {
+                    window._mp_1685519878 = gsap.timeline({
+                        scrollTrigger: {
+                            trigger: ".fixed_cont",
+                            start: "top 0%",
+                            end: "bottom 0%",
+                            pin: ".fixed_cont",
+                            pinSpacing: "margin"
+                        }
+                    });
+                }
+                if (matchMedia("screen and (min-width: 992px)").matches) {
+                    window._mp_1685519879 = gsap.timeline({
+                        scrollTrigger: {
+                            trigger: ".platform_accordion",
+                            start: "top 10%",
+                            end: "bottom 50%",
+                            pin: ".platform_accordion .image-column img",
+                            pinSpacing: "margin"
+                        }
+                    });
+                }
+            }
+            _$W._mp_refresher = (t = 0) => {
+                ScrollTrigger && setTimeout((() => {
+                    ScrollTrigger.sort(), ScrollTrigger.getAll().forEach((r => r.refresh()))
+                }), t)
+            }, addEventListener("load", (() => _mp_refresher(92)));
+        });
+    </script>
+    <script>const video = document.getElementById('accordionImage1'); function isElementInViewport(el) { const rect = el.getBoundingClientRect(); return (rect.top <= (window.innerHeight || document.documentElement.clientHeight) && rect.left >= 0 && rect.bottom >= 0 && rect.right >= 0); } function handleVideoPlay() { if (isElementInViewport(video)) { video.play(); } else { video.pause(); } } window.addEventListener('scroll', handleVideoPlay); handleVideoPlay();</script>
+    <script>const box = document.getElementById('four_section_homepage'); const textTitle = document.getElementById('home-title'); function isElementInViewport(el) { const rect = el.getBoundingClientRect(); return (rect.top <= (window.innerHeight || document.documentElement.clientHeight) && rect.left >= 0 && rect.bottom >= 0 && rect.right >= 0); } function handleBoxHighlight() { if (isElementInViewport(textTitle)) { textTitle.classList.add('active'); } else { textTitle.classList.remove('active'); } } window.addEventListener('scroll', handleBoxHighlight); handleBoxHighlight();</script>
+</body>
+
+</html>

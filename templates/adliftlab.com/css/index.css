@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'two';
+    src: url(../fonts/1cXxaUPXBpj2rGoU7C9WiHGF.woff2);
+}
+
+
+/* vietnamese */
+@font-face {
+    font-family: 'one';
+    src: url(../fonts/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2);
+
+}
+
+@font-face {
+    font-family: 'three';
+    src: url(../fonts/Yq6R-LCAWCX3-6Ky7FAFrOF6kjouQb4.woff2);
+
+}
+
+.all{
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: #fcfcfc;
+}
+.header{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 999;
+    background-color: white;
+    padding-left: 150px;
+}
+.banner{
+    background-image: linear-gradient(to top, rgb(21, 62, 142) 0%, rgb(29, 60, 125) 100%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px;
+    box-sizing: border-box;
+}
+.left{
+    width: 45%;
+    font-family: 'three';
+    height: auto;
+    /* border: 1px solid #ccc; */
+}
+.right{
+    flex: 45%;
+    text-align: right;
+    height: auto;
+    /* border: 1px solid #ccc; */
+}
+.left_tab{
+   
+    width: auto;
+    background-color: white;
+    color: #262626;
+    font-size: 18px;
+    width: 470px;
+    line-height: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    align-items: center;
+    padding-left: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+    font-family: 'three' !important;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    letter-spacing: 1px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+}
+.pinkl{
+    background-color: rgb(255, 87, 87);
+    color: white;
+    height: 40px;
+    font-family: 'three' !important;
+    line-height: 40px;
+    padding:0 20px;
+}
+.active_fonts{
+    margin-top: 20px !important;
+  margin-bottom: 50px !important;
+  color: #fff;
+  font-size: 70px;
+  
+  line-height: 80px;
+  font-family: 'two';
+  letter-spacing: 0.04em;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 1px 3px 4px rgba(0,0,0,0.33);
+}
+
+.active_fonts_span{
+    background: linear-gradient(-45deg,#FFCB3C,#ff5757);
+    background-size: auto;
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 100% 100%;
+    text-shadow: none;
+} 
+.bannerimg{
+    animation: shapeRotate 6s linear infinite both;
+    -webkit-animation: shapeRotate 6s linear infinite both;
+    
+}
+@keyframes shapeRotate{
+    0%, 100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+      }
+      20%, 80% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+      }
+      60% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+      }
+ }
+ .pincck_b{
+    height: 610px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .plimg{
+    width: 40%;
+    height: 100%;
+ }
+ .plimg>img{
+    height: 100%;
+    width: 100%;
+ }
+ .plftabs{
+    flex: 60%;
+    padding: 80px  ;
+    height: 100%;
+    background: #ff5757;
+    background-image: url("../img/crissxcross.png");
+    box-sizing: border-box;
+
+ }
+ .tabsplf{
+    display: flex;
+  
+    /* width: 25%; */
+    justify-content: center;
+ }
+ .tabitem{
+  width: auto;
+  font-size: 18px;
+  /* font-weight: 800; */
+  height: auto;
+  line-height: 1;
+  font-family: 'three';
+  /*height: 80px;
+  */letter-spacing: 0.5px;
+  transition:all 1s ;
+  /*background-color: white;
+  */border-bottom: 4px solid #fff;
+  padding: 20px 20px;
+  color: white;
+  cursor: pointer;
+  -webkit-transition:all 1s ;
+  -moz-transition:all 1s ;
+  -ms-transition:all 1s ;
+  -o-transition:all 1s ;
+}
+ #content{
+    margin-top: 40px;
+ }
+ #content p{
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: 'two';
+    letter-spacing: 0.8px;
+ }
+ #content h2{
+    font-size: 34px;
+    line-height: 36px;
+    margin-bottom: 26px;
+    font-family: 'one';
+ }
+ .t{
+    animation: shows 1s linear 1;
+    -webkit-animation: shows 1s linear 1;
+}
+@keyframes shows{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.grayzone{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 60px;
+    clip-path: polygon(0 0,100% 0,100% 95%,50% 100%,0 95%);
+    background-color: #F2F3F9;
+    margin-bottom: 60px;
+}
+.cardsboxs{
+    margin: 0 auto;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+}
+.cardsimg{
+    width: 525px;
+    height: 497px;
+
+}
+.carsfontsa{
+    width: 570px;
+    padding-left: 115px;
+    height: auto;
+}
+.carsfontsa>p{
+    margin: 40px 0;
+    color: #053143;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-family: 'three';
+}
+.carite{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'three';
+    color: #053143;
+    letter-spacing: 0.5px;
+}
+.carite::before{
+    content: '';
+    display: inline-block;
+    width: 7px;
+    margin-bottom: 2px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #ff5757;
+    margin-right: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.tts{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'two';
+    text-align: center;
+}
+.ttzone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 60px 0;
+}
+.tt_circle{
+    width: 220px;
+    font-family: 'one';
+    height: 220px;
+    border-radius: 50%;
+    background-image: linear-gradient( to right, #3f4c6d 0%, #465c85 1%, #1e3f79 100% );
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+
+    overflow: hidden;
+    box-shadow: 0px 10px 60px 0px rgba(37, 39, 88, 0.15);
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+.innercircle{
+    color:  white;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+
+.innercircle:hover{
+    background: linear-gradient( to right, #fcb900 0%, #ff6900 50%, #cf2e2e 100% );
+}
+.innercircle>h2{
+    font-size: 40px;
+  letter-spacing: -0.04em;
+  line-height: 1em;
+  font-weight: 400;
+}
+.innercircle>p{
+    text-transform: uppercase;
+    font-size: 14px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-top: 15px !important;
+}
+.pinkbars{
+    height: 282px;
+    width: 100%;
+    background-color: #ff5757;
+    background-image: url("../img/crissxcross.png");
+    line-height: 282px;
+    font-size: 58px;
+    /* font-weight:600; */
+    font-family: 'three';
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+}
+.footers{
+    /* height: 400px; */
+    width: 100%;
+
+}
+.footerimg{
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 60px 0 10px 0;
+}
+.footerimg{
+    color: #757474;
+    font-size: 14px;
+    font-family: 'one';
+    letter-spacing: 1px;
+}
+._t{
+    font-size: 14px;
+    margin: 40px 0;
+    /* letter-spacing: 1px; */
+    font-family: 'one';
+    text-align: center;
+}

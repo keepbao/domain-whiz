@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* padding: 30px; */
+}
+.header{
+    height: 768px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url('../img/sec-title-bg.jpg');
+    background-position: top;
+    background-size: cover;
+    color: #fff;
+    clip-path: polygon(0 0 ,100% 0 , 100% 733px , 90% 733px,90% 100%,10% 100%,10% 733px,0 733px);
+}
+.header .line{
+    height: 2px;
+    width: 20%;
+    background: rgba(255, 255, 255, 0.425);
+}
+.header>h1{
+    font-size: 70px;
+    color: #f9b931;
+}
+.header>h2{
+    font-size: 55px;
+}
+.about_zone{
+    height: 387px;
+    width: 100%;
+    border-top: #f9b931 3px solid;
+   
+    margin-top: -35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.about_zone>.centers{
+    height: auto;
+    width: 943px;
+}
+.about_zone>.centers>.title{
+    color: #1e1f24;
+    font-size:50px;
+    position: relative;
+    margin-top: 25px;
+}
+.about_zone>.centers>.title::after{
+    height: 2px;
+    width: 200px;
+    content: '';
+    display:inline-block;
+    background-color: #f9b931;
+    position: absolute;
+    top: 50%;
+    margin-left: 20px;
+}
+.about_zone>.centers>h3{
+    margin:5px 0 20px 0;
+    font-size: 24px;
+    
+}
+p{
+    color: #767a8f;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    font-size: 17px;
+}
+.Publishers{
+    height: 987px;
+    width: 100%;
+    border-top: #f9b931 3px solid;
+    background-image: url('../img/pub-bg.jpg');
+    border-bottom:#f9b931 3px solid; ;
+    background-position: top;
+    background-size: cover;
+    clip-path: polygon(0 0, 10% 0,10% 30px,90% 30px,90% 0,100% 0,100% 952px,90% 952px,90% 100%,10% 100%,10% 952px,0 952px);
+}
+.Publishers>.top{
+    height: auto;
+    width: 943px;
+    margin: 0 auto;
+    padding-top: 76px;
+
+}
+.Publishers>.top>.title{
+    color: #fff;
+    font-size:50px;
+    position: relative;
+    margin-top: 25px;
+}
+.Publishers>.top>.title::after{
+    height: 2px;
+    width: 200px;
+    content: '';
+    display:inline-block;
+    background-color: #f9b931;
+    position: absolute;
+    top: 50%;
+    margin-left: 20px;
+}
+.Publishers>.top>p{
+    color: #dce3ef;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    font-size: 17px;
+    margin-top: 20px;
+}

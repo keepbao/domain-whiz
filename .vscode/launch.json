@@ -1,0 +1,47 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "调试飞书 API (主进程)",
+      "port": 5858,
+      "address": "127.0.0.1",
+      "restart": true,
+      "timeout": 60000,
+      "sourceMaps": true,
+      "localRoot": "${workspaceFolder}",
+      "remoteRoot": "${workspaceFolder}",
+      "resolveSourceMapLocations": ["${workspaceFolder}/**", "!**/node_modules/**"],
+      "skipFiles": ["<node_internals>/**"],
+      "preLaunchTask": "electron:dev:debug"
+    },
+    {
+      "type": "node-terminal",
+      "name": "仅启动 dev:debug (手动附加)",
+      "request": "launch",
+      "command": "npm run dev:debug",
+      "cwd": "${workspaceFolder}/apps/desktop"
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "附加主进程 (5858，需已运行 dev:debug)",
+      "port": 5858,
+      "address": "127.0.0.1",
+      "restart": true,
+      "sourceMaps": true,
+      "localRoot": "${workspaceFolder}",
+      "remoteRoot": "${workspaceFolder}",
+      "resolveSourceMapLocations": ["${workspaceFolder}/**", "!**/node_modules/**"],
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run npm dev",
+      "request": "launch",
+      "command": "npm run dev",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

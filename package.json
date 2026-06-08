@@ -1,0 +1,20 @@
+{
+  "name": "domain-whiz",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @domain-whiz/desktop",
+    "dev:debug": "npm run dev:debug -w @domain-whiz/desktop",
+    "build": "npm run build -w @domain-whiz/desktop",
+    "dist:win": "npm run build && npm run dist:win -w @domain-whiz/desktop",
+    "dist:mac": "npm run build && npm run dist:mac -w @domain-whiz/desktop",
+    "typecheck": "npm run typecheck -w @domain-whiz/desktop",
+    "deploy:batch": "npm run build -w @domain-whiz/deployer && node scripts/deploy-batch.mjs"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}

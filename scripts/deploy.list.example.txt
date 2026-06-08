@@ -1,0 +1,26 @@
+# 批量部署列表 —— 复制为 scripts/deploy.list.txt 后编辑
+#
+# 行格式（与原 bash 脚本一致，第 4 列 username 可选）：
+#     <域名> <远程主机> <私钥路径> [username]
+#
+#   - 以 # 开头或空行将被跳过
+#   - 未显式给 username 时：10.* 开头用 root，其它用 ubuntu
+#   - 私钥路径可写绝对路径，也可写相对仓库根目录的路径
+#   - 本地站点目录约定为 sites/<域名>/
+#
+# 用法：
+#     npm run deploy:batch                          # 读取 scripts/deploy.list.txt
+#     npm run deploy:batch -- scripts/my-list.txt   # 自定义列表
+#
+# 可选环境变量：
+#     SSH_KEY_PASSPHRASE   私钥口令
+#     WEB_ROOT             远端站点根目录，默认 /var/www
+#     NGINX_SITES_DIR      nginx 启用目录，默认 /etc/nginx/sites-enabled
+#     NO_RELOAD=1          上传后不重载 nginx
+
+# 内网（10.* 自动使用 root）
+foo.com 10.101.1.1 D:/keys/intranet.pem
+
+# 公网（自动使用 ubuntu，可在第 4 列覆盖）
+bar.com 47.0.0.1 D:/keys/public.pem
+baz.com 47.0.0.2 D:/keys/public.pem deploy

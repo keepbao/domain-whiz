@@ -1,0 +1,111 @@
+{
+  "name": "@domain-whiz/desktop",
+  "version": "1.1.3",
+  "private": true,
+  "type": "module",
+  "main": "out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "dev:debug": "electron-vite dev --inspect --sourcemap",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "dist:win": "npm run build && electron-builder --win",
+    "dist:mac": "npm run build && electron-builder --mac",
+    "dist:mac:arm64": "npm run build && electron-builder --mac --arm64",
+    "dist:mac:x64": "npm run build && electron-builder --mac --x64"
+  },
+  "build": {
+    "appId": "com.domainwhiz.desktop",
+    "productName": "域名小能手",
+    "directories": {
+      "output": "release/${version}"
+    },
+    "npmRebuild": false,
+    "nodeGypRebuild": false,
+    "icon": "resources/icon.png",
+    "files": [
+      "out/**/*",
+      "resources/**/*",
+      "package.json"
+    ],
+    "extraFiles": [
+      {
+        "from": "../../templates",
+        "to": "templates"
+      },
+      {
+        "from": "../../sites",
+        "to": "sites"
+      },
+      {
+        "from": "../../config/desktop.config.example.json",
+        "to": "config/desktop.config.example.json"
+      },
+      {
+        "from": "../../desktop.config.json",
+        "to": "desktop.config.json"
+      }
+    ],
+    "win": {
+      "icon": "resources/icon.png",
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64",
+            "x64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "arm64",
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "${productName}-${version}-${arch}.${ext}",
+      "category": "public.app-category.developer-tools",
+      "icon": "resources/icon.png",
+      "hardenedRuntime": false,
+      "gatekeeperAssess": false,
+      "identity": null
+    },
+    "dmg": {
+      "writeUpdateInfo": false,
+      "artifactName": "${productName}-${version}-${arch}.${ext}",
+      "icon": "resources/icon.png"
+    }
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.6.1",
+    "@ant-design/v5-patch-for-react-19": "^1.0.3",
+    "@cursor/sdk": "^1.0.13",
+    "antd": "^5.25.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "ssh2-sftp-client": "^11.0.0",
+    "zustand": "^5.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "electron": "40.10.0",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^3.1.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.4"
+  }
+}

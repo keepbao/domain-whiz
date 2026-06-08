@@ -1,0 +1,27 @@
+/* domain-whiz · 全局兜底样式
+ * 大部分视觉由 antd ConfigProvider token 驱动，这里只放原生 CSS keyframes 之类
+ * 不便用 inline style 表达的小片段。
+ */
+
+@keyframes dw-blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.15; }
+  100% { opacity: 1; }
+}
+
+/* 隐藏 antd Segmented label 在 selected 态下的默认 text-shadow，使渐变更干净 */
+.ant-segmented-item-selected .ant-segmented-item-label {
+  text-shadow: none;
+  border-radius: 6px;
+}
+
+/* 历史列表 hover 时浮现的删除按钮（默认 opacity:0，hover 父行 → 1） */
+[role="button"]:hover > .dw-history-delete-btn {
+  opacity: 0.7 !important;
+}
+
+/* 部署详情侧面板进入动画（与左侧表格挤压同步） */
+@keyframes dw-slide-in {
+  from { transform: translateX(12px); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}

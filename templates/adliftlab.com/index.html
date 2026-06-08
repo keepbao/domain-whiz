@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+    <title>Adliftlab</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="img/1000.png">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<div class="all">
+		<div class="header">
+			<img src="./img/200-50.png" alt="Adliftlab" style="height: 70px;"/>
+		</div>
+		<div class="banner">
+			<div class="left">
+				<div class="left_tab" >
+					<div>Welcome to Adliftlab</div>
+					<div class="pinkl">Digital World</div>
+				</div>
+				<div class="active_fonts">
+					
+					<span class="active_fonts_span">Adliftlab Creative at heart Digital at the core</span>
+				</div>
+			</div>
+			<div class="right">
+				<img src="./img/adtriumph-banner.png" class="bannerimg" alt="BANNER IMG" style="width: 98%;margin-top:120px;">
+			</div>
+		</div>
+		<div class="pincck_b">
+			<div class="plimg">
+				<img src="./img/Mobile_marketing.jpg"/>
+			</div>
+			<div class="plftabs">
+				<div class="tabsplf" id="tabs">
+					<div class="tabitem" id="tab1" style="color: black;border-bottom-color: black;" onclick="changeTab('1')">Mobile Advertising</div>
+					<div class="tabitem" id="tab2" onclick="changeTab('2')">Performance Marketing </div>
+					<div class="tabitem" id="tab3" onclick="changeTab('3')">Programmatic Advertising </div>
+					<div class="tabitem" id="tab4" onclick="changeTab('4')">Branding </div>
+				</div>
+				
+				<div id="content">
+					<div id="content1" style="display: block;"  class="t">
+						<h2>Mobile Advertising</h2>
+
+						<p>Mobile devices are ubiquitous, making mobile advertising targeted, cost-effective, Interactive, and measurable.</p>
+					</div>
+					<div id="content2" style="display: none;" class="t">
+						<h2>Performance Marketing</h2>
+						<p>Performance marketing is a form of online advertising that measures and pays for specific actions, such as clicks, leads, or sales. It allows businesses to target specific demographics, interests, behaviors, and locations, increasing the likelihood of reaching potential customers.</p>
+					</div>
+					<div id="content3" style="display: none;"  class="t">
+						<h2>Programmatic Advertising</h2>
+						<p>We make programmatic advertising easy; our services have been designed to help you get the most out of your investments in ads, through leveraging data, insights & technology. We strive to deliver only the best outcomes.</p>
+					</div>
+					<div id="content4" style="display: none;"  class="t">
+						<h2>Branding</h2>
+						<p>With marketing messages flooding the internet, it's harder than ever to reach customers. But the solution isn't more marketing, it's digital branding.</p>
+					</div>
+				</div>
+			
+			</div>
+			<script>
+
+				function changeTab(n) {
+					
+
+					let tagsarr=document.getElementById('tabs').children
+					for(let i=0;i<tagsarr.length;i++){
+						if(tagsarr[i].id==`tab${n}`){
+							tagsarr[i].style.color='black'
+							tagsarr[i].style. borderBottomColor='black'
+						}else{
+							tagsarr[i].style.color='white'
+							tagsarr[i].style. borderBottomColor='white'
+						}
+					}
+					let arr=document.getElementById('content').children
+					for(let i=0;i<arr.length;i++){
+						if(arr[i].id==`content${n}`){
+							arr[i].style.display='block'
+						}else{
+							arr[i].style.display='none'
+						}
+					}
+				}
+			</script>
+		
+		</div>
+		<div class="grayzone">
+			<div class="cardsboxs">
+				<div class="cardsimg">
+					<img src="./img/Our-Focus.jpg" alt="Our-Focus" style="height: 100%;width: 100%;"/>
+				</div>
+				<div class="carsfontsa">
+					<h1 style="font-size: 48px;font-weight: 700;color: rgb(5, 49, 67);   font-family: 'two';">Our Focus</h1>
+					<p>Our Goal is to offer the most advanced and up-to-date solutions for your performance marketing campaigns. Leverage our expertise to revolutionize your brand presence in the digital space.</p>
+					<div class="carite">Go beyond performance marketing</div>
+					<div class="carite">Target with precision</div>
+					<div class="carite">Maximize ROI</div>
+					<div class="carite">Unlock new channels of growth</div>
+					
+				</div>
+
+			</div>
+
+	
+				<div class="cardsboxs" style="margin-top: 70px;">
+					<img src="./img/client-0-150x150.png" alt="logo1"/>
+					<img src="./img/client-1-150x150.png" alt="logo1"/>
+					<img src="./img/client-2-150x150.png" alt="logo1"/>
+					<img src="./img/client-3-150x150.png" alt="logo1"/>
+					<img src="./img/client-4-150x150.png" alt="logo1"/>
+					<img src="./img/client-5-150x150.png" alt="logo1"/>
+					<img src="./img/client-6-150x150.png" alt="logo1"/>
+					<img src="./img/client-7-150x150.png" alt="logo1"/>
+					<img src="./img/client-8-150x150.png" alt="logo1"/>
+					<img src="./img/client-9-150x150.png" alt="logo1"/>
+					<img src="./img/client-10-150x150.png" alt="logo1"/>
+				</div>
+
+			
+		</div>
+
+		<div class="tts">Over 300+</div>
+		<div class="tts" style="margin-bottom: 30px;">Happy Advertisers</div>
+		<div class="ttzone">
+			<div class="tt_circle">
+				<div class="innercircle">
+					<h2>1000+</h2>
+					<p>Global <br/>Partnerships</p>
+				</div>
+			</div>
+			<div class="tt_circle" style="margin:0 150px;">
+				<div class="innercircle"><h2>6MN+</h2>
+					<p>Impressions served <br/>daily</p> 
+				</div>
+			</div>
+			<div class="tt_circle">
+				<div class="innercircle"><h2>100k+</h2>
+					<p>Unique users <br/>acquired daily</p> 
+				</div>
+			</div>
+
+		</div>
+
+		<div class="pinkbars">
+			Revolutionize your Business with us!
+		</div>
+		<div class="footers">
+			<div class="footerimg">
+				<img src="./img/200-50.png" alt="Adliftlab" style="height: 75px;margin-bottom: 20px;"/>
+				<p>support@adliftlab.com</p>
+			</div>
+			<div class="_t">
+				Copyright  &copy; <script>document.write(new Date().getFullYear())</script>, All Rights Reserved | Adliftlab
+			</div>
+		</div>
+	</div>
+</body>
+</html>
