@@ -5,14 +5,25 @@
 ## 1.
 
 ```bash
-# 1. 装依赖（会自动下 Electron 二进制；首次约 1–2 分钟）
+# 1. 装依赖（.npmrc 设了 ignore-scripts，只装 JS 依赖，不跑原生编译）
 npm install
 
-# 2. 启动开发模式（electron-vite + Electron 主窗口）
+# 2. 首次初始化：补两个原生二进制（不需要 C++ 编译器）
+#    a) Electron 可执行文件
+node node_modules/electron/install.js
+#    b) sqlite3 的 N-API 预编译二进制（@cursor/sdk 依赖；跨 Node/Electron 通用）
+#       Windows PowerShell：
+cd node_modules/sqlite3 ; ../.bin/prebuild-install --runtime napi --target 6 ; cd ../..
+#       macOS / Linux：
+# (cd node_modules/sqlite3 && ../.bin/prebuild-install --runtime napi --target 6)
+
+# 3. 启动开发模式（electron-vite + Electron 主窗口）
 npm run dev
 
-# 3. 编辑 desktop.config.json 填好 Cursor API Key + 飞书 appId/appSecret + approvals 字段映射；进入「部署」给至少一台服务器配 SSH 私钥
+# 4. 编辑 desktop.config.json 填好 Cursor API Key + 飞书 appId/appSecret + approvals 字段映射；进入「部署」给至少一台服务器配 SSH 私钥
 ```
+
+> **为什么要手动补二进制？** 仓库根 `.npmrc` 设了 `ignore-scripts=true`，让 `npm install` 跳过原生模块（如 `sqlite3`）的 `node-gyp` 编译——否则在没有 Visual Studio C++ 工具链的 Windows 机器上会安装失败。代价是 Electron 二进制下载和 sqlite3 预编译包也被跳过，需如上手动补一次（之后无需重复）。
 
 > **没有「设置」页**——所有配置项都直接写 `desktop.config.json`（含 Cursor API Key 与飞书凭据）。
 > 服务器管理在「部署」页里做；飞书审批通过在「建站」对话里输入关键字调起。

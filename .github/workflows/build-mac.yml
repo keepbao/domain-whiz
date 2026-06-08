@@ -47,11 +47,16 @@ jobs:
         run: cp config/desktop.config.example.json desktop.config.json
 
       - name: Install dependencies
+        env:
+          # 仓库根 .npmrc 设了 ignore-scripts=true（为本地 Windows 免编译）。
+          # macOS runner 自带 clang，需让脚本执行：下载 electron 二进制、装 sqlite3 darwin N-API 预编译。
+          NPM_CONFIG_IGNORE_SCRIPTS: "false"
         run: |
-          npm ci
-          # npm ci skips platform optional deps when lockfile was generated on another OS.
-          # https://github.com/npm/cli/issues/4828
-          npm install --no-save --include=optional
+          # package-lock.json 是在 Windows 上生成的，只含 win 平台可选依赖。
+          # npm ci 在 macOS 上不会补 @rollup/rollup-darwin-* 等（npm bug #4828）。
+          # 删掉 lockfile 让 npm 在本机重新解析出正确的平台可选依赖。
+          rm -f package-lock.json
+          npm install --include=optional
 
       - name: Typecheck
         run: npm run typecheck
