@@ -22,3 +22,5 @@ id_ed25519
 
 # 真实部署列表，按 example 复制后本地编辑
 scripts/deploy.list.txt
+.chat-history.json
+.feishu-session.json
